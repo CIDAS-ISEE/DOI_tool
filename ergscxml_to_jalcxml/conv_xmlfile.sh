@@ -69,6 +69,8 @@ EOF
 done
 
 # Remove the local output dir.
+echo $(pwd)
+echo ${orgxmldir}
 if [ "$(pwd)" = "${orgxmldir}" ]; then 
   /bin/rm -rf ./${OUTPUT_dir} >/dev/null 2>&1
 fi
