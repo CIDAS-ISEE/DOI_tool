@@ -34,7 +34,7 @@ XML_outdir=${OUTPUT_dir}/xml
 HTML_outdir=${OUTPUT_dir}/html
 
 # Clean up the local output dir.
-/bin/rm -rf ./${OUTPUT_dir} >/dev/null 2>&1
+##/bin/rm -rf ./${OUTPUT_dir} >/dev/null 2>&1
 
 # Obtain the directory path in which this script (conv_xmlfile.sh) is located.
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
