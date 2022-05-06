@@ -1,5 +1,5 @@
 const languageCodeISO639 = [
-  { code: 'en', label: '英語' },
+  { code: 'en', label: 'English' },
   { code: 'ja', label: '日本語' },
   { code: 'aa', label: 'アファル語' },
   { code: 'ab', label: 'アプハジア語' },
