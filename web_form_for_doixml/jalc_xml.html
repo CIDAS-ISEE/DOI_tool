@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JalC XML FORM</title>
+  <link rel="stylesheet" href="jalc_xml.css">
+</head>
+<body class="container">
+  <label for="xml-upload">XMLを選択してください</label>
+  <input id="xml-upload" type="file" accept="application/xml">
+
+  <!-- content コンテンツ -->
+  <div id="content" class="accordion js-accordion">
+    <div class="content-body item" style="display: none;">
+      <!-- 各項目の最初のフォームはJSで使うテンプレート用とするので非表示・値無しを維持する -->
+      <!-- sequence メタデータのシーケンス -->
+      <label>
+        content_sequence
+        <input class="content_sequence">
+      </label>
+      <br>
+      <!-- doi 研究データに登録するDOI名 -->
+      <label>
+        DOI
+        <input class="doi">
+      </label>
+      <br>
+      <!-- url DOI名のランディングページのURL -->
+      <label>
+        URL
+        <input class="url">
+      </label>
+      <br>
+
+      <div id="url">
+      </div>
+
+      <!-- title-list 複数のタイトルを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>タイトル</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="title-list block">
+            <div class="item-body" style="display: none;">
+              <label>
+                タイトル記述言語
+                <select class="titles-lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <label>
+                タイトル
+                <input class="title">
+              </label>
+              <label>
+                サブタイトル
+                <input class="subtitle">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">タイトルを削除</button>
+            </div>
+          </div>
+          <button class="title-list-form-append c-button">タイトルを追加</button>
+        </div>
+      </div>
+
+      <!-- subject-list 複数のサブジェクトを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>サブジェクト</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="subject-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                サブジェクト
+                <input class="subject">
+              </label>
+              <br>
+              <label>
+                サブジェクト記述言語
+                <select class="lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <label>
+                サブジェクトスキーム
+                <input class="subject_scheme">
+              </label>
+              <br>
+              <label>
+                サブジェクトスキームURI
+                <input class="scheme_uri">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">サブジェクトを削除</button>
+            </div>
+          </div>
+          <button class="subject-list-form-append c-button">サブジェクトを追加</button>
+        </div>
+      </div>
+
+      <!-- creator-list 複数の作成者を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>作成者</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="creator-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                順序
+                <input class="sequence">
+              </label>
+              <br>
+              <label>
+                個人/機関タイプ
+                <input class="type">
+              </label>
+              <div class="creator-list-names">
+                <div class="item-name-body" style="display: none;">
+                  作成者名<br>
+                  <label>
+                    作成者名記述言語
+                    <select class="names-lang">
+                      <option value="">なし</option>
+                    </select>
+                  </label>
+                  <br>
+                  <label>
+                    作成者(姓)
+                    <input class="last_name">
+                  </label>
+                  <br>
+                  <label>
+                    作成者(名)
+                    <input class="first_name">
+                  </label>
+                  <br>
+                  <label>
+                    敬称(接頭辞)
+                    <input class="prefix">
+                  </label>
+                  <br>
+                  <label>
+                    敬称(接尾辞)
+                    <input class="suffix">
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_name c-button">作成者名を削除</button>
+                </div>
+              </div>
+              <button class="creator-list-names-form-append c-button">作成者名を追加</button>
+              <br>
+              <div class="creator-list-affiliation">
+                <div class="item-affiliation-body" style="display: none;">
+                  作成者の所属機関<br>
+                  <label>
+                    作成者の所属機関名
+                    <input class="affiliation_name">
+                  </label>
+                  <br>
+                  <label>
+                    作成者の所属機関名の順序
+                    <input class="affiliation_sequence">
+                  </label>
+                  <br>
+                  <label>
+                    作成者の所属機関名の記述言語
+                    <select class="affiliation_name-lang">
+                      <option value="">なし</option>
+                    </select>
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_affiliation c-button">作成者の所属機関を削除</button>
+                </div>
+              </div>
+              <button class="creator-list-affiliation-form-append c-button">作成者の所属機関を追加</button>
+              <br>
+              <div class="creator-list-researcher_id">
+                <div class="item-researcher_id-body" style="display: none;">
+                  作成者の研究者ID<br>
+                  <label>
+                    作成者の研究者IDコード
+                    <input class="id_code">
+                  </label>
+                  <br>
+                  <label>
+                    作成者の研究者IDタイプ
+                    <input class="researcher_id_type">
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_resercher_id c-button">作成者の研究者IDを削除</button>
+                </div>
+              </div>
+              <button class="creator-list-researcher_id-form-append c-button">作成者の研究者IDを追加</button>
+              <br>
+              <br>
+              <button class="remove c-button">作成者を削除</button>
+            </div>
+          </div>
+          <button class="creator-list-form-append c-button">作成者を追加</button>
+        </div>
+      </div>
+
+      <!-- publication-date 発行年月日を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>発行年月日</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="publication-date">
+            <div class="item-body" style="display: none;">
+              <label>
+                発行年
+                <input class="year">
+              </label>
+              <br>
+              <label>
+                月
+                <input class="month">
+              </label>
+              <br>
+              <label>
+                日
+                <input class="day">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- publisher 出版者を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>出版者</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="publisher">
+            <div class="item-body" style="display: none;">
+              <label>
+                出版者名
+                <input class="publisher_name">
+              </label>
+              <br>
+              <label>
+                出版者名の記述言語
+                <select class="lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <label>
+                出身地
+                <select class="location">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contributor-list 複数の寄与者を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>寄与者</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="contributor-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                順序
+                <input class="sequence">
+              </label>
+              <br>
+              <label>
+                個人/機関タイプ
+                <input class="type">
+              </label>
+              <label>
+                寄与者タイプ
+                <input class="contributor_type">
+              </label>
+              <div class="contributor-list-names">
+                <div class="item-name-body" style="display: none;">
+                  寄与者名<br>
+                  <label>
+                    寄与者名記述言語
+                    <select class="names-lang">
+                      <option value="">なし</option>
+                    </select>
+                  </label>
+                  <br>
+                  <label>
+                    作成者(姓)
+                    <input class="last_name">
+                  </label>
+                  <br>
+                  <label>
+                    作成者(名)
+                    <input class="first_name">
+                  </label>
+                  <br>
+                  <label>
+                    敬称(接頭辞)
+                    <input class="prefix">
+                  </label>
+                  <br>
+                  <label>
+                    敬称(接尾辞)
+                    <input class="suffix">
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_name c-button">寄与者名を削除</button>
+                </div>
+              </div>
+              <button class="contributor-list-names-form-append c-button">寄与者名を追加</button>
+              <br>
+              <div class="contributor-list-affiliation">
+                <div class="item-affiliation-body" style="display: none;">
+                  寄与者の所属機関<br>
+                  <label>
+                    寄与者の所属機関名
+                    <input class="affiliation_name">
+                  </label>
+                  <br>
+                  <label>
+                    寄与者の所属機関名の順序
+                    <input class="affiliation_sequence">
+                  </label>
+                  <br>
+                  <label>
+                    寄与者の所属機関名の記述言語
+                    <select class="affiliation_name-lang">
+                      <option value="">なし</option>
+                    </select>
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_affiliation c-button">寄与者の所属機関を削除</button>
+                </div>
+              </div>
+              <button class="contributor-list-affiliation-form-append c-button">寄与者の所属機関を追加</button>
+              <br>
+              <div class="contributor-list-researcher_id">
+                <div class="item-researcher_id-body" style="display: none;">
+                  寄与者の研究者ID<br>
+                  <label>
+                    寄与者の研究者IDコード
+                    <input class="id_code">
+                  </label>
+                  <br>
+                  <label>
+                    寄与者の研究者IDタイプ
+                    <input class="researcher_id_type">
+                  </label>
+                  <br>
+                  <br>
+                  <button class="remove_resercher_id c-button">寄与者の研究者IDを削除</button>
+                </div>
+              </div>
+              <button class="contributor-list-researcher_id-form-append c-button">寄与者の研究者IDを追加</button>
+              <br>
+              <br>
+              <button class="remove c-button">寄与者を削除</button>
+            </div>
+          </div>
+          <button class="contributor-list-form-append c-button">寄与者を追加</button>
+        </div>
+      </div>
+
+      <!-- edition 版を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>版</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="edition">
+            <div class="item-body" style="display: none;">
+              <label>
+                バリエーション
+                <input class="variation">
+              </label>
+              <br>
+              <label>
+                バージョン
+                <input class="version">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- format-list 複数のフォーマットを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>フォーマット</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="format-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                フォーマット
+                <input class="format">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">フォーマットを削除</button>
+            </div>
+          </div>
+          <button class="format-list-form-append c-button">フォーマットを追加</button>
+        </div>
+      </div>
+
+      <!-- relation-list 複数の関連するコンテンツを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>コンテンツ</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="relation-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                関連するコンテンツ
+                <input class="related_content">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツのタイプ
+                <input class="type">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツのスキーム
+                <input class="scheme">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツのスキームURI
+                <input class="scheme_uri">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツのスキームの種類
+                <input class="scheme_type">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツとの関連性
+                <input class="relation">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">関連するコンテンツを削除</button>
+            </div>
+          </div>
+          <button class="relation-list-form-append c-button">関連するコンテンツを追加</button>
+        </div>
+      </div>
+
+      <!-- alternate-identifier-list 複数の代替識別子を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>代替識別子</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="alternate-identifier-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                代替識別子
+                <input class="alternate_identifier">
+              </label>
+              <br>
+              <label>
+                代替識別子のタイプ
+                <input class="type">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">代替識別子を削除</button>
+            </div>
+          </div>
+          <button class="alternate-identifier-list-form-append c-button">代替識別子を追加</button>
+        </div>
+      </div>
+
+      <!-- content-language リソースの一次言語 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>リソースの一次言語</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="content-language">
+            <div class="item-body" style="display: none;">
+              <label>
+                リソースの一次言語
+                <select class="content_language">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- date-list 複数の日付を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>日付</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="date-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                日付
+                <input class="date">
+              </label>
+              <br>
+              <label>
+                日付のタイプ
+                <input class="type">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">日付を削除</button>
+            </div>
+          </div>
+          <button class="date-list-form-append c-button">日付を追加</button>
+        </div>
+      </div>
+
+      <!-- resource-type リソース種別 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>リソース種別</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="resource-type">
+            <div class="item-body" style="display: none;">
+              <label>
+                リソース種別
+                <input class="resource_type">
+              </label>
+              <br>
+              <label>
+                リソースタイプ
+                <input class="type">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- size-list 複数のサイズを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>サイズ</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="size-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                サイズ
+                <input class="size">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">サイズを削除</button>
+            </div>
+          </div>
+          <button class="size-list-form-append c-button">サイズを追加</button>
+        </div>
+      </div>
+
+      <!-- rights-list 複数の権利情報を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>権利情報</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="rights-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                権利情報
+                <input class="rights">
+              </label>
+              <br>
+              <label>
+                権利情報のURI
+                <input class="uri">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">権利情報を削除</button>
+            </div>
+          </div>
+          <button class="rights-list-form-append c-button">権利情報を追加</button>
+        </div>
+      </div>
+
+      <!-- description-list 複数の追加情報を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>追加情報</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="description-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                追加情報(内容記述)
+                <textarea class="description" rows="5" cols="40"></textarea>
+              </label>
+              <br>
+              <label>
+                追加(内容記述)情報タイプ
+                <input class="type">
+              </label>
+              <br>
+              <label>
+                内容記述情報の記述言語
+                <select class="lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">内容記述情報を削除</button>
+            </div>
+          </div>
+          <button class="description-list-form-append c-button">内容記述情報を追加</button>
+        </div>
+      </div>
+
+      <!-- signature シグネチャ -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>シグネチャ</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="signature">
+            <div class="item-body" style="display: none;">
+              <label>
+                シグネチャ
+                <input class="signature">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- geolocation-list 複数の位置情報を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>位置情報</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="geolocation-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                位置情報(点)
+                <input class="geolocation_point">
+              </label>
+              <br>
+              <label>
+                位置情報(空間)
+                <input class="geolocation_box">
+              </label>
+              <br>
+              <label>
+                位置情報(フリーテキスト)
+                <input class="geolocation_place">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">位置情報を削除</button>
+            </div>
+          </div>
+          <button class="geolocation-list-form-append c-button">位置情報を追加</button>
+        </div>
+      </div>
+
+      <!-- fund-list 複数の助成機関を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>助成機関</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="fund-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                助成機関名称
+                <input class="funder_name">
+              </label>
+              <br>
+              <label>
+                助成機関名の記述言語
+                <select class="lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <label>
+                助成機関ID
+                <input class="funder_identifier">
+              </label>
+              <br>
+              <label>
+                助成機関IDタイプ
+                <input class="type">
+              </label>
+              <br>
+
+              <label>
+                助成番号(グラント番号)、ファンド番号
+                <input class="award_number">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">助成機関を削除</button>
+            </div>
+          </div>
+          <button class="fund-list-form-append c-button">助成機関を追加</button>
+        </div>
+      </div>
+
+      <!-- multiple-resolution-priority マルチプル優先度 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>マルチプル優先度</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="multiple-resolution-priority">
+            <div class="item-body" style="display: none;">
+              <label>
+                マルチプル優先度
+                <input class="multiple_resolution_priority">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- isas-data-list 複数のisas_dataを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>isas_data_list</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="isas-data-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                URL
+                <input class="url">
+              </label>
+              <br>
+              <label>
+                TEXT
+                <input class="text">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">isas_dataを削除</button>
+            </div>
+          </div>
+          <button class="isas-data-list-form-append c-button">isas_dataを追加</button>
+        </div>
+      </div>
+
+      <!-- isas_citation isas_citation -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>isas_citation</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="isas_citation">
+            <div class="item-body" style="display: none;">
+              <label>
+                isas_citation
+                <input class="isas_citation">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- isas-metadata-date-list 複数のisas_metadata_dateを表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>isas_metadata_date_list</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <div class="isas-metadata-date-list">
+            <div class="item-body" style="display: none;">
+              <label>
+                type
+                <input class="type">
+              </label>
+              <br>
+              <label>
+                date
+                <input class="date">
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">isas_metadata_dateを削除</button>
+            </div>
+          </div>
+          <button class="isas-metadata-date-list-form-append c-button">isas_metadata_dateを追加</button>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <button class="remove_content c-button">メタデータを削除</button>
+    </div>
+  </div>
+  <button class="content-form-append c-button">メタデータを追加</button>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <input type="hidden" id="xml-filename" value="JaLC_research_data.xml">
+  <button id="xml-download" class="c-button">XMLを保存</button>
+
+  <script src="iso_code.js"></script>
+  <script src="jalc_xml.js"></script>
+  <script src="form_title_list.js"></script>
+  <script src="form_subject_list.js"></script>
+  <script src="form_creator_list.js"></script>
+  <script src="form_publication_date.js"></script>
+  <script src="form_publisher.js"></script>
+  <script src="form_contributor_list.js"></script>
+  <script src="form_edition.js"></script>
+  <script src="form_format_list.js"></script>
+  <script src="form_relation_list.js"></script>
+  <script src="form_alternate_identifier_list.js"></script>
+  <script src="form_content_language.js"></script>
+  <script src="form_date_list.js"></script>
+  <script src="form_resource_type.js"></script>
+  <script src="form_size_list.js"></script>
+  <script src="form_rights_list.js"></script>
+  <script src="form_description_list.js"></script>
+  <script src="form_signature.js"></script>
+  <script src="form_geolocation_list.js"></script>
+  <script src="form_fund_list.js"></script>
+  <script src="form_multiple_resolution_priority.js"></script>
+  <script src="form_isas_data_list.js"></script>
+  <script src="form_isas_citation.js"></script>
+  <script src="form_isas_metadata_date_list.js"></script>
+
+  <script src="form_content.js"></script>
+</body>
+</html>
