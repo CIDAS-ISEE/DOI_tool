@@ -76,35 +76,35 @@
       <!-- subject-list 複数のサブジェクトを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* サブジェクト</h4>
+          <h4>* Scientific keywords for the data データのサブジェクト</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
           </div>
-          <p>データに関わるキーワードを入力してください。例：ULF波動</p>
+          <p>データに関わるキーワードを入力してください。例：ULF waves.   Please provide scientific keywords for the data (e.g., ULF waves, ionosphere, solar corona, etc).</p>
           <div class="subject-list">
             <div class="item-body" style="display: none;">
               <label>
-                サブジェクト
+                サブジェクト scientific keywords
                 <input class="subject">
               </label>
               <br>
               <label>
-                サブジェクト記述言語
+                サブジェクト記述言語 language (Default: English)
                 <select class="lang">
                   <option value="">なし</option>
                 </select>
               </label>
               <br>
               <label>
-                サブジェクトスキーム
+                サブジェクトスキーム <br>Schema or dictionary for scientific keywords
                 <input class="subject_scheme">
               </label>
               <br>
               <label>
-                サブジェクトスキームURI
+                サブジェクトスキームURI<br>the URL where a schema file for the above schema/dictionay is available
                 <input class="scheme_uri">
               </label>
               <br>
@@ -119,139 +119,139 @@
       <!-- creator-list 複数の作成者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* 作成者</h4>
+          <h4>* Creators of the data データ作成者</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
           </div>
-          <p>項目の説明文サンプルです</p>
+          <p>データの作成者を1人ずつ入力してください。<br>Please provide information on each of the creators for the data.</p>
           <div class="creator-list">
             <div class="item-body" style="display: none;">
               <label>
-                順序
+                順序 order
                 <input class="sequence">
               </label>
               <br>
               <label>
-                個人/機関タイプ
+                個人/機関タイプ<br>Please enter either of "person" or "institute" that best represents the above name of the creator. 
                 <input class="type">
               </label>
               <div class="creator-list-names">
                 <div class="item-name-body" style="display: none;">
-                  作成者名<br>
+                  作成者名 The name of the creator<br>
                   <label>
-                    作成者名記述言語
+                    作成者名記述言語 Language (Default: English)
                     <select class="names-lang">
                       <option value="">なし</option>
                     </select>
                   </label>
                   <br>
                   <label>
-                    作成者(姓)
+                    作成者(姓) Last name
                     <input class="last_name">
                   </label>
                   <br>
                   <label>
-                    作成者(名)
+                    作成者(名) Given name
                     <input class="first_name">
                   </label>
                   <br>
                   <label>
-                    敬称(接頭辞)
+                    敬称(接頭辞) prefix (Dr, Mr, Ms, ...)
                     <input class="prefix">
                   </label>
                   <br>
                   <label>
-                    敬称(接尾辞)
+                    敬称(接尾辞) suffix (Jr, MD, PhD, ...)
                     <input class="suffix">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_name c-button">作成者名を削除</button>
+                  <button class="remove_name c-button">作成者名を削除 / Delete thie creator</button>
                 </div>
               </div>
-              <button class="creator-list-names-form-append c-button">作成者名を追加</button>
+              <button class="creator-list-names-form-append c-button">作成者名を追加 / Add a new creator</button>
               <br>
               <div class="creator-list-affiliation">
                 <div class="item-affiliation-body" style="display: none;">
-                  作成者の所属機関<br>
+                  作成者の所属機関 Affiliation of the creator<br>
                   <label>
-                    作成者の所属機関名
+                    作成者の所属機関名 <br>The name of an institute, university, company that the creator belongs to.
                     <input class="affiliation_name">
                   </label>
                   <br>
                   <label>
-                    作成者の所属機関名の順序
+                    作成者の所属機関名の順序<br>The order (Default :1). Please provide the number of order if a single person belongs to multiple institutes or companies)
                     <input class="affiliation_sequence">
                   </label>
                   <br>
                   <label>
-                    作成者の所属機関名の記述言語
+                    作成者の所属機関名の記述言語 Language (Default: English)
                     <select class="affiliation_name-lang">
                       <option value="">なし</option>
                     </select>
                   </label>
                   <br>
                   <br>
-                  <button class="remove_affiliation c-button">作成者の所属機関を削除</button>
+                  <button class="remove_affiliation c-button">作成者の所属機関を削除 / Delete the affiliation</button>
                 </div>
               </div>
-              <button class="creator-list-affiliation-form-append c-button">作成者の所属機関を追加</button>
+              <button class="creator-list-affiliation-form-append c-button">作成者の所属機関を追加 / Add a new affiliation</button>
               <br>
               <div class="creator-list-researcher_id">
                 <div class="item-researcher_id-body" style="display: none;">
-                  作成者の研究者ID<br>
+                  作成者の研究者ID <br>Researcher ID for the creator (if any)
                   <label>
-                    作成者の研究者IDコード
+                    作成者の研究者IDコード Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
                     <input class="id_code">
                   </label>
                   <br>
                   <label>
-                    作成者の研究者IDタイプ
+                    作成者の研究者IDタイプ Type of the ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCORPUS ID, ...)
                     <input class="researcher_id_type">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_resercher_id c-button">作成者の研究者IDを削除</button>
+                  <button class="remove_resercher_id c-button">作成者の研究者IDを削除 / Delete the ID</button>
                 </div>
               </div>
-              <button class="creator-list-researcher_id-form-append c-button">作成者の研究者IDを追加</button>
+              <button class="creator-list-researcher_id-form-append c-button">作成者の研究者IDを追加 / Add a new ID</button>
               <br>
               <br>
-              <button class="remove c-button">作成者を削除</button>
+              <button class="remove c-button">作成者を削除 / Delete the creator</button>
             </div>
           </div>
-          <button class="creator-list-form-append c-button">作成者を追加</button>
+          <button class="creator-list-form-append c-button">作成者を追加 / Add a new creator</button>
         </div>
       </div>
 
       <!-- publication-date 発行年月日を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* 発行年月日</h4>
+          <h4>* Publication date of the data データの発行年月日</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
           </div>
-          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <p>データが公表された年月日を記入。西暦年だけでも可。<br>Please enter the date when the data was published. The calendar year is necessary, while you can skip providing month and day.</p>
           <div class="publication-date">
             <div class="item-body" style="display: none;">
               <label>
-                発行年
+                発行年 4-digit year of the publication date for the data (e.g., 2018)
                 <input class="year">
               </label>
               <br>
               <label>
-                月
+                月 month of the publication date (omissible)
                 <input class="month">
               </label>
               <br>
               <label>
-                日
+                日 day of the publication date (omissible)
                 <input class="day">
               </label>
               <br>
@@ -263,30 +263,30 @@
       <!-- publisher 出版者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データセットを作った人の名前</h4>
+          <h4>* Publisher of the data データを出版した人 or 組織 </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
           </div>
-          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <p>データを出版・公開した人 or 組織を記入する。Please fill in the boxes below with the information on a person or institute that published the data.</p>
           <div class="publisher">
             <div class="item-body" style="display: none;">
               <label>
-                出版者名
+                出版者名 <br>The name of the data publisher <br>(e.g., ERG Science Center, Institute for Space-Earth Environmental Research, Nagoya University)
                 <input class="publisher_name">
               </label>
               <br>
               <label>
-                出版者名の記述言語
+                出版者名の記述言語 Language (Default: English)
                 <select class="lang">
                   <option value="">なし</option>
                 </select>
               </label>
               <br>
               <label>
-                出身地
+                出身地 / country in which the data publisher is located.
                 <select class="location">
                   <option value="">なし</option>
                 </select>
@@ -300,115 +300,115 @@
       <!-- contributor-list 複数の寄与者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データ製造に関わった機関名</h4>
+          <h4>* Contributors to the data creation データ製造に寄与した個人 or 機関 </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
           </div>
-          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <p>データ製造に寄与した個人 or 機関を記入する。<br>Please provide the information on a person or institute that contributes to the data creation.</p>
           <div class="contributor-list">
             <div class="item-body" style="display: none;">
               <label>
-                順序
+                順序 order 
                 <input class="sequence">
               </label>
               <br>
               <label>
-                個人/機関タイプ
+                個人/機関タイプ Please enter either of "person" or "institute".
                 <input class="type">
               </label>
               <label>
-                寄与者タイプ
+                寄与者タイプ Type of the contributor<br>e.g., ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitute, ResearchGroup, ProjectManager, RightsHolder, Sponsor, ...
                 <input class="contributor_type">
               </label>
               <div class="contributor-list-names">
                 <div class="item-name-body" style="display: none;">
-                  寄与者名<br>
+                  Name of the contributor<br>
                   <label>
-                    寄与者名記述言語
+                    寄与者名記述言語 Language (Default: English)
                     <select class="names-lang">
                       <option value="">なし</option>
                     </select>
                   </label>
                   <br>
                   <label>
-                    作成者(姓)
+                    作成者(姓) Last name (Leave this blank if the name of an institute, group, project is given)
                     <input class="last_name">
                   </label>
                   <br>
                   <label>
-                    作成者(名)
+                    作成者(名) 機関名の場合はここに記入する。<br>Given name (Here write the name of an institute, group, project is given)
                     <input class="first_name">
                   </label>
                   <br>
                   <label>
-                    敬称(接頭辞)
+                    敬称(接頭辞) prefix (Dr, Mr, Ms, ...)
                     <input class="prefix">
                   </label>
                   <br>
                   <label>
-                    敬称(接尾辞)
+                    敬称(接尾辞) suffix (Jr, MD, PhD, ...)
                     <input class="suffix">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_name c-button">寄与者名を削除</button>
+                  <button class="remove_name c-button">寄与者名を削除 / Delete the contributor</button>
                 </div>
               </div>
-              <button class="contributor-list-names-form-append c-button">寄与者名を追加</button>
+              <button class="contributor-list-names-form-append c-button">寄与者名を追加 / Add a new contributor</button>
               <br>
               <div class="contributor-list-affiliation">
                 <div class="item-affiliation-body" style="display: none;">
-                  寄与者の所属機関<br>
+                  寄与者の所属機関 Affiliation of the contributor<br>
                   <label>
-                    寄与者の所属機関名
+                    寄与者の所属機関名 Name of the affiliation that the contributor belongs to
                     <input class="affiliation_name">
                   </label>
                   <br>
                   <label>
-                    寄与者の所属機関名の順序
+                    寄与者の所属機関名の順序 order of the affiliation (set if belonging to multiple affiliations)
                     <input class="affiliation_sequence">
                   </label>
                   <br>
                   <label>
-                    寄与者の所属機関名の記述言語
+                    寄与者の所属機関名の記述言語 Language (Default: English)
                     <select class="affiliation_name-lang">
                       <option value="">なし</option>
                     </select>
                   </label>
                   <br>
                   <br>
-                  <button class="remove_affiliation c-button">寄与者の所属機関を削除</button>
+                  <button class="remove_affiliation c-button">寄与者の所属機関を削除 / Delete the affiliation</button>
                 </div>
               </div>
-              <button class="contributor-list-affiliation-form-append c-button">寄与者の所属機関を追加</button>
+              <button class="contributor-list-affiliation-form-append c-button">寄与者の所属機関を追加 / Add a new affiliation</button>
               <br>
               <div class="contributor-list-researcher_id">
                 <div class="item-researcher_id-body" style="display: none;">
-                  寄与者の研究者ID<br>
+                  寄与者の研究者ID Researcher ID of the contributor<br>
                   <label>
-                    寄与者の研究者IDコード
+                    寄与者の研究者IDコード <br>Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
                     <input class="id_code">
                   </label>
                   <br>
                   <label>
-                    寄与者の研究者IDタイプ
+                    寄与者の研究者IDタイプ <br>Type of the researcher ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCOPUS ID, ...)
                     <input class="researcher_id_type">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_resercher_id c-button">寄与者の研究者IDを削除</button>
+                  <button class="remove_resercher_id c-button">寄与者の研究者IDを削除 / Delete the researcher ID</button>
                 </div>
               </div>
-              <button class="contributor-list-researcher_id-form-append c-button">寄与者の研究者IDを追加</button>
+              <button class="contributor-list-researcher_id-form-append c-button">寄与者の研究者IDを追加 / Add a new researcher ID</button>
               <br>
               <br>
-              <button class="remove c-button">寄与者を削除</button>
+              <button class="remove c-button">寄与者を削除 / Delete the contributor</button>
             </div>
           </div>
-          <button class="contributor-list-form-append c-button">寄与者を追加</button>
+          <button class="contributor-list-form-append c-button">寄与者を追加 / Add a new contributor</button>
         </div>
       </div>
 
