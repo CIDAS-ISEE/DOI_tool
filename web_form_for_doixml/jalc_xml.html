@@ -845,11 +845,11 @@
             <div></div>
             <button class="xml-download c-button">XMLを保存/Save in XML</button>
           </div>
-          <p>登録するコンテンツのマルチプルレゾリューションを許可する場合に、1～999（1が最優先）の数値を指定してください</p>
+          <p>登録するコンテンツのマルチプルレゾリューションを許可する場合に、1～999（1が最優先）の数値を指定してください/Please specify 1-999 (1 is the firsr priority) if you use the multiple resolution (N/A)</p>
           <div class="multiple-resolution-priority">
             <div class="item-body" style="display: none;">
               <label>
-                マルチプル優先度
+                マルチプル優先度/Multiple resolution priority (N/A)
                 <input class="multiple_resolution_priority">
               </label>
               <br>
@@ -861,14 +861,14 @@
       <!-- isas-data-list 複数のisas_dataを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データリポジトリ情報</h4>
+          <h4>* データリポジトリ情報 / Information on the data repositry</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save in XEML</button>
           </div>
-          <p>データを公開しているURL等の記載をお願いします（例：https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/</p>
+          <p>データを公開しているURL等の記載をお願いします（例：https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/) / Information about URI for the data repository</p>
           <div class="isas-data-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -877,29 +877,29 @@
               </label>
               <br>
               <label>
-                例：Directory of the dataset (all versions, ERG Science Center)
+                例：Directory of the dataset (all versions, ERG Science Center)/ex: Directory of data set (all version, ERG Science Center)
                 <input class="text">
               </label>
               <br>
               <br>
-              <button class="remove c-button">isas_dataを削除</button>
+              <button class="remove c-button">データリポジトリ情報を削除/Delete information on the data repository</button>
             </div>
           </div>
-          <button class="isas-data-list-form-append c-button">isas_dataを追加</button>
+          <button class="isas-data-list-form-append c-button">データリポジトリ情報を追加/Add information on the data repositry</button>
         </div>
       </div>
 
       <!-- isas_citation isas_citation -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データを引用する際の情報</h4>
+          <h4>* データを引用する際の情報/Information about the data citation</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存/Save in XML file</button>
           </div>
-          <p>データ引用情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）</p>
+          <p>データ引用情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）/ Please mention the data citation information</p>
           <div class="isas_citation">
             <div class="item-body" style="display: none;">
               <label>
@@ -915,46 +915,46 @@
       <!-- isas-metadata-date-list 複数のisas_metadata_dateを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>*変更履歴</h4>
+          <h4>*変更履歴/update history</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存/Save in XML</button>
           </div>
-          <p>変更履歴を記載します</p>
+          <p>変更履歴を記載します/update history</p>
           <div class="isas-metadata-date-list">
             <div class="item-body" style="display: none;">
               <label>
-                type(公開済みの場合"Issued"、アップデートの場合 "Updatedd"と記載ください)
+                type(公開済みの場合"Issued"、アップデートの場合 "Updated"と記載ください)/ type : "Issued" (the data files have been opened), "Updated" (upated)
                 <input class="type">
               </label>
               <br>
               <label>
-                date(変更履歴の日付をいれてください）
+                date(変更履歴の日付をいれてください）/ data on the data updated
                 <input class="date">
               </label>
               <br>
               <br>
-              <button class="remove c-button">isas_metadata_dateを削除</button>
+              <button class="remove c-button">変更履歴を削除/Delete update history</button>
             </div>
           </div>
-          <button class="isas-metadata-date-list-form-append c-button">isas_metadata_dateを追加</button>
+          <button class="isas-metadata-date-list-form-append c-button">変更履歴を追加/Add update history</button>
         </div>
       </div>
 
       <br>
       <br>
-      <button class="remove_content c-button">メタデータを削除</button>
+      <button class="remove_content c-button">メタデータを削除/Delete metadata</button>
     </div>
   </div>
-  <button class="content-form-append c-button">メタデータを追加</button>
+  <button class="content-form-append c-button">メタデータを追加/Add metadata</button>
   <br>
   <br>
   <hr>
   <br>
   <input type="hidden" id="xml-filename" value="JaLC_research_data.xml">
-  <button id="xml-download" class="c-button">XMLを保存</button>
+  <button id="xml-download" class="c-button">XMLを保存/Save in XML</button>
 
   <script src="iso_code.js"></script>
   <script src="jalc_xml.js"></script>
