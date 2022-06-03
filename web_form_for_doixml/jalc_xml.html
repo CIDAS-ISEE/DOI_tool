@@ -7,26 +7,26 @@
   <link rel="stylesheet" href="jalc_xml.css">
 </head>
 <body class="container">
-  <label for="xml-upload">XML‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢</label>
+  <label for="xml-upload">XMLã‚’é¸æŠã—ã¦ãã ã•ã„</label>
   <input id="xml-upload" type="file" accept="application/xml">
 
-  <!-- content ƒRƒ“ƒeƒ“ƒc -->
+  <!-- content ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ -->
   <div id="content" class="accordion js-accordion">
     <div class="content-body item" style="display: none;">
-      <!-- Še€–Ú‚ÌÅ‰‚ÌƒtƒH[ƒ€‚ÍJS‚Åg‚¤ƒeƒ“ƒvƒŒ[ƒg—p‚Æ‚·‚é‚Ì‚Å”ñ•\¦E’l–³‚µ‚ğˆÛ‚·‚é -->
-      <!-- sequence ƒƒ^ƒf[ƒ^‚ÌƒV[ƒPƒ“ƒX -->
+      <!-- å„é …ç›®ã®æœ€åˆã®ãƒ•ã‚©ãƒ¼ãƒ ã¯JSã§ä½¿ã†ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆç”¨ã¨ã™ã‚‹ã®ã§éè¡¨ç¤ºãƒ»å€¤ç„¡ã—ã‚’ç¶­æŒã™ã‚‹ -->
+      <!-- sequence ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã®ã‚·ãƒ¼ã‚±ãƒ³ã‚¹ -->
       <label>
         content_sequence     (no need to edit - automatically assigned)
         <input class="content_sequence">
       </label>
       <br>
-      <!-- doi Œ¤‹†ƒf[ƒ^‚É“o˜^‚·‚éDOI–¼ -->
+      <!-- doi ç ”ç©¶ãƒ‡ãƒ¼ã‚¿ã«ç™»éŒ²ã™ã‚‹DOIå -->
       <label>
         DOI for the dataset that are described below<br>(e.g.,10.34515/DATA.ERG-04001 )
         <input class="doi">
       </label>
       <br>
-      <!-- url DOI–¼‚Ìƒ‰ƒ“ƒfƒBƒ“ƒOƒy[ƒW‚ÌURL -->
+      <!-- url DOIåã®ãƒ©ãƒ³ãƒ‡ã‚£ãƒ³ã‚°ãƒšãƒ¼ã‚¸ã®URL -->
       <label>
         URL of the landing page for the dataset<br>(e.g., https://www.isee.nagoya-u.ac.jp/doi/10.34515/DATA_ERG-04001.html )
         <input class="url">
@@ -36,222 +36,222 @@
       <div id="url">
       </div>
 
-      <!-- title-list •¡”‚Ìƒ^ƒCƒgƒ‹‚ğ•\‚·—v‘f -->
+      <!-- title-list è¤‡æ•°ã®ã‚¿ã‚¤ãƒˆãƒ«ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Title of the dataset / ƒf[ƒ^ƒZƒbƒg‚Ìƒ^ƒCƒgƒ‹</h4>
+          <h4>* Title of the dataset / ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã®ã‚¿ã‚¤ãƒˆãƒ«</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^ƒZƒbƒg‚Ì–¼‘O(ƒ^ƒCƒgƒ‹)‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢BƒTƒuƒ^ƒCƒgƒ‹‚ÍÈ—ª‰Â”\‚Å‚·B<br>Fill in the boxes below with the title (and subtitle, which can be omitted) of the dataset. <br> e.g., Exploration of energization and Radiation in Geospace (ERG) LEPe Level-2 3-D flux data</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã®åå‰(ã‚¿ã‚¤ãƒˆãƒ«)ã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ã€‚ã‚µãƒ–ã‚¿ã‚¤ãƒˆãƒ«ã¯çœç•¥å¯èƒ½ã§ã™ã€‚<br>Fill in the boxes below with the title (and subtitle, which can be omitted) of the dataset. <br> e.g., Exploration of energization and Radiation in Geospace (ERG) LEPe Level-2 3-D flux data</p>
           <div class="title-list block">
             <div class="item-body" style="display: none;">
               <label>
                 Language (default: Eng)
                 <select class="titles-lang">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
               <label>
-                ƒf[ƒ^ƒZƒbƒg‚Ìƒ^ƒCƒgƒ‹ / Title of the dataset
+                ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã®ã‚¿ã‚¤ãƒˆãƒ« / Title of the dataset
                 <input class="title">
               </label>
               <label>
-                ƒf[ƒ^ƒZƒbƒg‚ÌƒTƒuƒ^ƒCƒgƒ‹ (È—ª‰Â) / Subtitle of the dataset (omissible)
+                ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã®ã‚µãƒ–ã‚¿ã‚¤ãƒˆãƒ« (çœç•¥å¯) / Subtitle of the dataset (omissible)
                 <input class="subtitle">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ƒ^ƒCƒgƒ‹‚ğíœ / Remove the title</button>
+              <button class="remove c-button">ã‚¿ã‚¤ãƒˆãƒ«ã‚’å‰Šé™¤ / Remove the title</button>
             </div>
           </div>
-          <button class="title-list-form-append c-button">ƒ^ƒCƒgƒ‹‚ğ’Ç‰Á / add the other title</button>
+          <button class="title-list-form-append c-button">ã‚¿ã‚¤ãƒˆãƒ«ã‚’è¿½åŠ  / add the other title</button>
         </div>
       </div>
 
-      <!-- subject-list •¡”‚ÌƒTƒuƒWƒFƒNƒg‚ğ•\‚·—v‘f -->
+      <!-- subject-list è¤‡æ•°ã®ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Scientific keywords for the data ƒf[ƒ^‚ÌƒTƒuƒWƒFƒNƒg</h4>
+          <h4>* Scientific keywords for the data ãƒ‡ãƒ¼ã‚¿ã®ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^‚ÉŠÖ‚í‚éƒL[ƒ[ƒh‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B—áFULF waves.   Please provide scientific keywords for the data (e.g., ULF waves, ionosphere, solar corona, etc).</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã«é–¢ã‚ã‚‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚ä¾‹ï¼šULF waves.   Please provide scientific keywords for the data (e.g., ULF waves, ionosphere, solar corona, etc).</p>
           <div class="subject-list">
             <div class="item-body" style="display: none;">
               <label>
-                ƒTƒuƒWƒFƒNƒg scientific keywords
+                ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ scientific keywords
                 <input class="subject">
               </label>
               <br>
               <label>
-                ƒTƒuƒWƒFƒNƒg‹LqŒ¾Œê language (Default: English)
+                ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨˜è¿°è¨€èª language (Default: English)
                 <select class="lang">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
               <label>
-                ƒTƒuƒWƒFƒNƒgƒXƒL[ƒ€ <br>Schema or dictionary for scientific keywords
+                ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚¹ã‚­ãƒ¼ãƒ  <br>Schema or dictionary for scientific keywords
                 <input class="subject_scheme">
               </label>
               <br>
               <label>
-                ƒTƒuƒWƒFƒNƒgƒXƒL[ƒ€URI<br>the URL where a schema file for the above schema/dictionay is available
+                ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚¹ã‚­ãƒ¼ãƒ URI<br>the URL where a schema file for the above schema/dictionay is available
                 <input class="scheme_uri">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ƒTƒuƒWƒFƒNƒg‚ğíœ</button>
+              <button class="remove c-button">ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="subject-list-form-append c-button">ƒTƒuƒWƒFƒNƒg‚ğ’Ç‰Á</button>
+          <button class="subject-list-form-append c-button">ã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- creator-list •¡”‚Ìì¬Ò‚ğ•\‚·—v‘f -->
+      <!-- creator-list è¤‡æ•°ã®ä½œæˆè€…ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Creators of the data ƒf[ƒ^ì¬Ò</h4>
+          <h4>* Creators of the data ãƒ‡ãƒ¼ã‚¿ä½œæˆè€…</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^‚Ìì¬Ò‚ğ1l‚¸‚Â“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B<br>Please provide information on each of the creators for the data.</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆè€…ã‚’1äººãšã¤å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚<br>Please provide information on each of the creators for the data.</p>
           <div class="creator-list">
             <div class="item-body" style="display: none;">
               <label>
-                ‡˜ order
+                é †åº order
                 <input class="sequence">
               </label>
               <br>
               <label>
-                ŒÂl/‹@ŠÖƒ^ƒCƒv<br>Please enter either of "person" or "institute" that best represents the above name of the creator. 
+                å€‹äºº/æ©Ÿé–¢ã‚¿ã‚¤ãƒ—<br>Please enter either of "person" or "institute" that best represents the above name of the creator. 
                 <input class="type">
               </label>
               <div class="creator-list-names">
                 <div class="item-name-body" style="display: none;">
-                  ì¬Ò–¼ The name of the creator<br>
+                  ä½œæˆè€…å The name of the creator<br>
                   <label>
-                    ì¬Ò–¼‹LqŒ¾Œê Language (Default: English)
+                    ä½œæˆè€…åè¨˜è¿°è¨€èª Language (Default: English)
                     <select class="names-lang">
-                      <option value="">‚È‚µ</option>
+                      <option value="">ãªã—</option>
                     </select>
                   </label>
                   <br>
                   <label>
-                    ì¬Ò(©) Last name
+                    ä½œæˆè€…(å§“) Last name
                     <input class="last_name">
                   </label>
                   <br>
                   <label>
-                    ì¬Ò(–¼) Given name
+                    ä½œæˆè€…(å) Given name
                     <input class="first_name">
                   </label>
                   <br>
                   <label>
-                    ŒhÌ(Ú“ª«) prefix (Dr, Mr, Ms, ...)
+                    æ•¬ç§°(æ¥é ­è¾) prefix (Dr, Mr, Ms, ...)
                     <input class="prefix">
                   </label>
                   <br>
                   <label>
-                    ŒhÌ(Ú”ö«) suffix (Jr, MD, PhD, ...)
+                    æ•¬ç§°(æ¥å°¾è¾) suffix (Jr, MD, PhD, ...)
                     <input class="suffix">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_name c-button">ì¬Ò–¼‚ğíœ / Delete thie creator</button>
+                  <button class="remove_name c-button">ä½œæˆè€…åã‚’å‰Šé™¤ / Delete thie creator</button>
                 </div>
               </div>
-              <button class="creator-list-names-form-append c-button">ì¬Ò–¼‚ğ’Ç‰Á / Add a new creator</button>
+              <button class="creator-list-names-form-append c-button">ä½œæˆè€…åã‚’è¿½åŠ  / Add a new creator</button>
               <br>
               <div class="creator-list-affiliation">
                 <div class="item-affiliation-body" style="display: none;">
-                  ì¬Ò‚ÌŠ‘®‹@ŠÖ Affiliation of the creator<br>
+                  ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢ Affiliation of the creator<br>
                   <label>
-                    ì¬Ò‚ÌŠ‘®‹@ŠÖ–¼ <br>The name of an institute, university, company that the creator belongs to.
+                    ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢å <br>The name of an institute, university, company that the creator belongs to.
                     <input class="affiliation_name">
                   </label>
                   <br>
                   <label>
-                    ì¬Ò‚ÌŠ‘®‹@ŠÖ–¼‚Ì‡˜<br>The order (Default :1). Please provide the number of order if a single person belongs to multiple institutes or companies)
+                    ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢åã®é †åº<br>The order (Default :1). Please provide the number of order if a single person belongs to multiple institutes or companies)
                     <input class="affiliation_sequence">
                   </label>
                   <br>
                   <label>
-                    ì¬Ò‚ÌŠ‘®‹@ŠÖ–¼‚Ì‹LqŒ¾Œê Language (Default: English)
+                    ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢åã®è¨˜è¿°è¨€èª Language (Default: English)
                     <select class="affiliation_name-lang">
-                      <option value="">‚È‚µ</option>
+                      <option value="">ãªã—</option>
                     </select>
                   </label>
                   <br>
                   <br>
-                  <button class="remove_affiliation c-button">ì¬Ò‚ÌŠ‘®‹@ŠÖ‚ğíœ / Delete the affiliation</button>
+                  <button class="remove_affiliation c-button">ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢ã‚’å‰Šé™¤ / Delete the affiliation</button>
                 </div>
               </div>
-              <button class="creator-list-affiliation-form-append c-button">ì¬Ò‚ÌŠ‘®‹@ŠÖ‚ğ’Ç‰Á / Add a new affiliation</button>
+              <button class="creator-list-affiliation-form-append c-button">ä½œæˆè€…ã®æ‰€å±æ©Ÿé–¢ã‚’è¿½åŠ  / Add a new affiliation</button>
               <br>
               <div class="creator-list-researcher_id">
                 <div class="item-researcher_id-body" style="display: none;">
-                  ì¬Ò‚ÌŒ¤‹†ÒID <br>Researcher ID for the creator (if any)
+                  ä½œæˆè€…ã®ç ”ç©¶è€…ID <br>Researcher ID for the creator (if any)
                   <label>
-                    ì¬Ò‚ÌŒ¤‹†ÒIDƒR[ƒh Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
+                    ä½œæˆè€…ã®ç ”ç©¶è€…IDã‚³ãƒ¼ãƒ‰ Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
                     <input class="id_code">
                   </label>
                   <br>
                   <label>
-                    ì¬Ò‚ÌŒ¤‹†ÒIDƒ^ƒCƒv Type of the ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCORPUS ID, ...)
+                    ä½œæˆè€…ã®ç ”ç©¶è€…IDã‚¿ã‚¤ãƒ— Type of the ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCORPUS ID, ...)
                     <input class="researcher_id_type">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_resercher_id c-button">ì¬Ò‚ÌŒ¤‹†ÒID‚ğíœ / Delete the ID</button>
+                  <button class="remove_resercher_id c-button">ä½œæˆè€…ã®ç ”ç©¶è€…IDã‚’å‰Šé™¤ / Delete the ID</button>
                 </div>
               </div>
-              <button class="creator-list-researcher_id-form-append c-button">ì¬Ò‚ÌŒ¤‹†ÒID‚ğ’Ç‰Á / Add a new ID</button>
+              <button class="creator-list-researcher_id-form-append c-button">ä½œæˆè€…ã®ç ”ç©¶è€…IDã‚’è¿½åŠ  / Add a new ID</button>
               <br>
               <br>
-              <button class="remove c-button">ì¬Ò‚ğíœ / Delete the creator</button>
+              <button class="remove c-button">ä½œæˆè€…ã‚’å‰Šé™¤ / Delete the creator</button>
             </div>
           </div>
-          <button class="creator-list-form-append c-button">ì¬Ò‚ğ’Ç‰Á / Add a new creator</button>
+          <button class="creator-list-form-append c-button">ä½œæˆè€…ã‚’è¿½åŠ  / Add a new creator</button>
         </div>
       </div>
 
-      <!-- publication-date ”­s”NŒ“ú‚ğ•\‚·—v‘f -->
+      <!-- publication-date ç™ºè¡Œå¹´æœˆæ—¥ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Publication date of the data ƒf[ƒ^‚Ì”­s”NŒ“ú</h4>
+          <h4>* Publication date of the data ãƒ‡ãƒ¼ã‚¿ã®ç™ºè¡Œå¹´æœˆæ—¥</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^‚ªŒö•\‚³‚ê‚½”NŒ“ú‚ğ‹L“üB¼—ï”N‚¾‚¯‚Å‚à‰ÂB<br>Please enter the date when the data was published. The calendar year is necessary, while you can skip providing month and day.</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ãŒå…¬è¡¨ã•ã‚ŒãŸå¹´æœˆæ—¥ã‚’è¨˜å…¥ã€‚è¥¿æš¦å¹´ã ã‘ã§ã‚‚å¯ã€‚<br>Please enter the date when the data was published. The calendar year is necessary, while you can skip providing month and day.</p>
           <div class="publication-date">
             <div class="item-body" style="display: none;">
               <label>
-                ”­s”N 4-digit year of the publication date for the data (e.g., 2018)
+                ç™ºè¡Œå¹´ 4-digit year of the publication date for the data (e.g., 2018)
                 <input class="year">
               </label>
               <br>
               <label>
-                Œ month of the publication date (omissible)
+                æœˆ month of the publication date (omissible)
                 <input class="month">
               </label>
               <br>
               <label>
-                “ú day of the publication date (omissible)
+                æ—¥ day of the publication date (omissible)
                 <input class="day">
               </label>
               <br>
@@ -260,35 +260,35 @@
         </div>
       </div>
 
-      <!-- publisher o”ÅÒ‚ğ•\‚·—v‘f -->
+      <!-- publisher å‡ºç‰ˆè€…ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Publisher of the data ƒf[ƒ^‚ğo”Å‚µ‚½l or ‘gD </h4>
+          <h4>* Publisher of the data ãƒ‡ãƒ¼ã‚¿ã‚’å‡ºç‰ˆã—ãŸäºº or çµ„ç¹” </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^‚ğo”ÅEŒöŠJ‚µ‚½l or ‘gD‚ğ‹L“ü‚·‚éBPlease fill in the boxes below with the information on a person or institute that published the data.</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã‚’å‡ºç‰ˆãƒ»å…¬é–‹ã—ãŸäºº or çµ„ç¹”ã‚’è¨˜å…¥ã™ã‚‹ã€‚Please fill in the boxes below with the information on a person or institute that published the data.</p>
           <div class="publisher">
             <div class="item-body" style="display: none;">
               <label>
-                o”ÅÒ–¼ <br>The name of the data publisher <br>(e.g., ERG Science Center, Institute for Space-Earth Environmental Research, Nagoya University)
+                å‡ºç‰ˆè€…å <br>The name of the data publisher <br>(e.g., ERG Science Center, Institute for Space-Earth Environmental Research, Nagoya University)
                 <input class="publisher_name">
               </label>
               <br>
               <label>
-                o”ÅÒ–¼‚Ì‹LqŒ¾Œê Language (Default: English)
+                å‡ºç‰ˆè€…åã®è¨˜è¿°è¨€èª Language (Default: English)
                 <select class="lang">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
               <label>
-                og’n / country in which the data publisher is located.
+                å‡ºèº«åœ° / country in which the data publisher is located.
                 <select class="location">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
@@ -297,141 +297,141 @@
         </div>
       </div>
 
-      <!-- contributor-list •¡”‚ÌŠñ—^Ò‚ğ•\‚·—v‘f -->
+      <!-- contributor-list è¤‡æ•°ã®å¯„ä¸è€…ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Contributors to the data creation ƒf[ƒ^»‘¢‚ÉŠñ—^‚µ‚½ŒÂl or ‹@ŠÖ </h4>
+          <h4>* Contributors to the data creation ãƒ‡ãƒ¼ã‚¿è£½é€ ã«å¯„ä¸ã—ãŸå€‹äºº or æ©Ÿé–¢ </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶ / Save in XML file</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜ / Save in XML file</button>
           </div>
-          <p>ƒf[ƒ^»‘¢‚ÉŠñ—^‚µ‚½ŒÂl or ‹@ŠÖ‚ğ‹L“ü‚·‚éB<br>Please provide the information on a person or institute that contributes to the data creation.</p>
+          <p>ãƒ‡ãƒ¼ã‚¿è£½é€ ã«å¯„ä¸ã—ãŸå€‹äºº or æ©Ÿé–¢ã‚’è¨˜å…¥ã™ã‚‹ã€‚<br>Please provide the information on a person or institute that contributes to the data creation.</p>
           <div class="contributor-list">
             <div class="item-body" style="display: none;">
               <label>
-                ‡˜ order 
+                é †åº order 
                 <input class="sequence">
               </label>
               <br>
               <label>
-                ŒÂl/‹@ŠÖƒ^ƒCƒv Please enter either of "person" or "institute".
+                å€‹äºº/æ©Ÿé–¢ã‚¿ã‚¤ãƒ— Please enter either of "person" or "institute".
                 <input class="type">
               </label>
               <label>
-                Šñ—^Òƒ^ƒCƒv Type of the contributor<br>e.g., ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitute, ResearchGroup, ProjectManager, RightsHolder, Sponsor, ...
+                å¯„ä¸è€…ã‚¿ã‚¤ãƒ— Type of the contributor<br>e.g., ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitute, ResearchGroup, ProjectManager, RightsHolder, Sponsor, ...
                 <input class="contributor_type">
               </label>
               <div class="contributor-list-names">
                 <div class="item-name-body" style="display: none;">
                   Name of the contributor<br>
                   <label>
-                    Šñ—^Ò–¼‹LqŒ¾Œê Language (Default: English)
+                    å¯„ä¸è€…åè¨˜è¿°è¨€èª Language (Default: English)
                     <select class="names-lang">
-                      <option value="">‚È‚µ</option>
+                      <option value="">ãªã—</option>
                     </select>
                   </label>
                   <br>
                   <label>
-                    ì¬Ò(©) Last name (Leave this blank if the name of an institute, group, project is given)
+                    ä½œæˆè€…(å§“) Last name (Leave this blank if the name of an institute, group, project is given)
                     <input class="last_name">
                   </label>
                   <br>
                   <label>
-                    ì¬Ò(–¼) ‹@ŠÖ–¼‚Ìê‡‚Í‚±‚±‚É‹L“ü‚·‚éB<br>Given name (Here write the name of an institute, group, project is given)
+                    ä½œæˆè€…(å) æ©Ÿé–¢åã®å ´åˆã¯ã“ã“ã«è¨˜å…¥ã™ã‚‹ã€‚<br>Given name (Here write the name of an institute, group, project is given)
                     <input class="first_name">
                   </label>
                   <br>
                   <label>
-                    ŒhÌ(Ú“ª«) prefix (Dr, Mr, Ms, ...)
+                    æ•¬ç§°(æ¥é ­è¾) prefix (Dr, Mr, Ms, ...)
                     <input class="prefix">
                   </label>
                   <br>
                   <label>
-                    ŒhÌ(Ú”ö«) suffix (Jr, MD, PhD, ...)
+                    æ•¬ç§°(æ¥å°¾è¾) suffix (Jr, MD, PhD, ...)
                     <input class="suffix">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_name c-button">Šñ—^Ò–¼‚ğíœ / Delete the contributor</button>
+                  <button class="remove_name c-button">å¯„ä¸è€…åã‚’å‰Šé™¤ / Delete the contributor</button>
                 </div>
               </div>
-              <button class="contributor-list-names-form-append c-button">Šñ—^Ò–¼‚ğ’Ç‰Á / Add a new contributor</button>
+              <button class="contributor-list-names-form-append c-button">å¯„ä¸è€…åã‚’è¿½åŠ  / Add a new contributor</button>
               <br>
               <div class="contributor-list-affiliation">
                 <div class="item-affiliation-body" style="display: none;">
-                  Šñ—^Ò‚ÌŠ‘®‹@ŠÖ Affiliation of the contributor<br>
+                  å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢ Affiliation of the contributor<br>
                   <label>
-                    Šñ—^Ò‚ÌŠ‘®‹@ŠÖ–¼ Name of the affiliation that the contributor belongs to
+                    å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢å Name of the affiliation that the contributor belongs to
                     <input class="affiliation_name">
                   </label>
                   <br>
                   <label>
-                    Šñ—^Ò‚ÌŠ‘®‹@ŠÖ–¼‚Ì‡˜ order of the affiliation (set if belonging to multiple affiliations)
+                    å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢åã®é †åº order of the affiliation (set if belonging to multiple affiliations)
                     <input class="affiliation_sequence">
                   </label>
                   <br>
                   <label>
-                    Šñ—^Ò‚ÌŠ‘®‹@ŠÖ–¼‚Ì‹LqŒ¾Œê Language (Default: English)
+                    å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢åã®è¨˜è¿°è¨€èª Language (Default: English)
                     <select class="affiliation_name-lang">
-                      <option value="">‚È‚µ</option>
+                      <option value="">ãªã—</option>
                     </select>
                   </label>
                   <br>
                   <br>
-                  <button class="remove_affiliation c-button">Šñ—^Ò‚ÌŠ‘®‹@ŠÖ‚ğíœ / Delete the affiliation</button>
+                  <button class="remove_affiliation c-button">å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢ã‚’å‰Šé™¤ / Delete the affiliation</button>
                 </div>
               </div>
-              <button class="contributor-list-affiliation-form-append c-button">Šñ—^Ò‚ÌŠ‘®‹@ŠÖ‚ğ’Ç‰Á / Add a new affiliation</button>
+              <button class="contributor-list-affiliation-form-append c-button">å¯„ä¸è€…ã®æ‰€å±æ©Ÿé–¢ã‚’è¿½åŠ  / Add a new affiliation</button>
               <br>
               <div class="contributor-list-researcher_id">
                 <div class="item-researcher_id-body" style="display: none;">
-                  Šñ—^Ò‚ÌŒ¤‹†ÒID Researcher ID of the contributor<br>
+                  å¯„ä¸è€…ã®ç ”ç©¶è€…ID Researcher ID of the contributor<br>
                   <label>
-                    Šñ—^Ò‚ÌŒ¤‹†ÒIDƒR[ƒh <br>Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
+                    å¯„ä¸è€…ã®ç ”ç©¶è€…IDã‚³ãƒ¼ãƒ‰ <br>Researcher ID (e.g., https://orcid.org/0000-1111-2222-3333)
                     <input class="id_code">
                   </label>
                   <br>
                   <label>
-                    Šñ—^Ò‚ÌŒ¤‹†ÒIDƒ^ƒCƒv <br>Type of the researcher ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCOPUS ID, ...)
+                    å¯„ä¸è€…ã®ç ”ç©¶è€…IDã‚¿ã‚¤ãƒ— <br>Type of the researcher ID (ORCID, RESEARCHMAP, ERAD, KAKENHI, SCOPUS ID, ...)
                     <input class="researcher_id_type">
                   </label>
                   <br>
                   <br>
-                  <button class="remove_resercher_id c-button">Šñ—^Ò‚ÌŒ¤‹†ÒID‚ğíœ / Delete the researcher ID</button>
+                  <button class="remove_resercher_id c-button">å¯„ä¸è€…ã®ç ”ç©¶è€…IDã‚’å‰Šé™¤ / Delete the researcher ID</button>
                 </div>
               </div>
-              <button class="contributor-list-researcher_id-form-append c-button">Šñ—^Ò‚ÌŒ¤‹†ÒID‚ğ’Ç‰Á / Add a new researcher ID</button>
+              <button class="contributor-list-researcher_id-form-append c-button">å¯„ä¸è€…ã®ç ”ç©¶è€…IDã‚’è¿½åŠ  / Add a new researcher ID</button>
               <br>
               <br>
-              <button class="remove c-button">Šñ—^Ò‚ğíœ / Delete the contributor</button>
+              <button class="remove c-button">å¯„ä¸è€…ã‚’å‰Šé™¤ / Delete the contributor</button>
             </div>
           </div>
-          <button class="contributor-list-form-append c-button">Šñ—^Ò‚ğ’Ç‰Á / Add a new contributor</button>
+          <button class="contributor-list-form-append c-button">å¯„ä¸è€…ã‚’è¿½åŠ  / Add a new contributor</button>
         </div>
       </div>
 
-      <!-- edition ”Å‚ğ•\‚·—v‘f -->
+      <!-- edition ç‰ˆã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* ƒf[ƒ^ƒtƒ@ƒCƒ‹‚Ìƒo[ƒWƒ‡ƒ“</h4>
+          <h4>* ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ŒöŠJ‚³‚ê‚Ä‚¢‚éƒf[ƒ^‚Ì•i¿(—á‚¦‚ÎAŒ¤‹†‚É—˜—p‚Å‚«‚é‚æ‚¤‚È•¨——Ê‚É•ÏŠ·‚³‚ê‚Ä‚¢‚é‚©HAZ³Ï‚İ‚©–¢Z³‚©)‚Æƒf[ƒ^‚Ìƒo[ƒWƒ‡ƒ“‚ğ‹L“ü‚µ‚Ü‚·B</p>
+          <p>å…¬é–‹ã•ã‚Œã¦ã„ã‚‹ãƒ‡ãƒ¼ã‚¿ã®å“è³ª(ä¾‹ãˆã°ã€ç ”ç©¶ã«åˆ©ç”¨ã§ãã‚‹ã‚ˆã†ãªç‰©ç†é‡ã«å¤‰æ›ã•ã‚Œã¦ã„ã‚‹ã‹ï¼Ÿã€æ ¡æ­£æ¸ˆã¿ã‹æœªæ ¡æ­£ã‹)ã¨ãƒ‡ãƒ¼ã‚¿ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¨˜å…¥ã—ã¾ã™ã€‚</p>
           <div class="edition">
             <div class="item-body" style="display: none;">
               <label>
-                *ƒf[ƒ^‚Ì•i¿iZ³Ï‚İ/–¢Z³‚©‚È‚Çj<br>(—áFThe official release version for scientific use containing fully-calibrated data in physical units)
+                *ãƒ‡ãƒ¼ã‚¿ã®å“è³ªï¼ˆæ ¡æ­£æ¸ˆã¿/æœªæ ¡æ­£ã‹ãªã©ï¼‰<br>(ä¾‹ï¼šThe official release version for scientific use containing fully-calibrated data in physical units)
                 <input class="variation">
               </label>
               <br>
               <label>
-                *ƒo[ƒWƒ‡ƒ“<br>(—áFv01)
+                *ãƒãƒ¼ã‚¸ãƒ§ãƒ³<br>(ä¾‹ï¼šv01)
                 <input class="version">
               </label>
               <br>
@@ -440,131 +440,131 @@
         </div>
       </div>
 
-      <!-- format-list •¡”‚ÌƒtƒH[ƒ}ƒbƒg‚ğ•\‚·—v‘f -->
+      <!-- format-list è¤‡æ•°ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* ƒf[ƒ^ƒtƒ@ƒCƒ‹‚ÌŒ`®(CDFAnetCDF‚È‚Ç)</h4>
+          <h4>* ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã®å½¢å¼(CDFã€netCDFãªã©)</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^ƒtƒ@ƒCƒ‹‚ÌƒtƒH[ƒ}ƒbƒg(CDFAnetCDF‚È‚Çj‚ğ‚¢‚ê‚Ä‚­‚¾‚³‚¢B</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ(CDFã€netCDFãªã©ï¼‰ã‚’ã„ã‚Œã¦ãã ã•ã„ã€‚</p>
           <div class="format-list">
             <div class="item-body" style="display: none;">
               <label>
-                *ƒtƒH[ƒ}ƒbƒg
+                *ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
                 <input class="format">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ƒtƒH[ƒ}ƒbƒg‚ğíœ</button>
+              <button class="remove c-button">ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="format-list-form-append c-button">ƒtƒH[ƒ}ƒbƒg‚ğ’Ç‰Á</button>
+          <button class="format-list-form-append c-button">ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- relation-list •¡”‚ÌŠÖ˜A‚·‚éƒRƒ“ƒeƒ“ƒc‚ğ•\‚·—v‘f -->
+      <!-- relation-list è¤‡æ•°ã®é–¢é€£ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* Ql•¶Œ£‚É‚Â‚¢‚Ä‚Ìî•ñ‚È‚Ç</h4>
+          <h4>* å‚è€ƒæ–‡çŒ®ã«ã¤ã„ã¦ã®æƒ…å ±ãªã©</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ŒöŠJƒf[ƒ^‚ÉŠÖ˜A‚·‚éQl•¶Œ£‚âAŠÏ‘ª“_AŠÏ‘ª‘ªŠíAƒvƒƒWƒFƒNƒg“™‚Ìî•ñ‚ğ“ü‚ê‚Ä‚­‚¾‚³‚¢B</p>
+          <p>å…¬é–‹ãƒ‡ãƒ¼ã‚¿ã«é–¢é€£ã™ã‚‹å‚è€ƒæ–‡çŒ®ã‚„ã€è¦³æ¸¬ç‚¹ã€è¦³æ¸¬æ¸¬å™¨ã€ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆç­‰ã®æƒ…å ±ã‚’å…¥ã‚Œã¦ãã ã•ã„ã€‚</p>
           <div class="relation-list">
             <div class="item-body" style="display: none;">
               <label>
-                *ŠÖ˜A‚·‚é•¶Œ£“™<br>(—áFQl•¶Œ£‚Ìê‡AReferences‚Æ‚·‚é)
+                *é–¢é€£ã™ã‚‹æ–‡çŒ®ç­‰<br>(ä¾‹ï¼šå‚è€ƒæ–‡çŒ®ã®å ´åˆã€Referencesã¨ã™ã‚‹)
                 <input class="related_content">
               </label>
               <br>
               <label>
-                *ŠÖ˜A‚·‚é•¶Œ£“™‚Ì¯•Êƒ^ƒCƒv<br>(—áFDOI‚Ìê‡ADOI‚Æ‚·‚é)
+                *é–¢é€£ã™ã‚‹æ–‡çŒ®ç­‰ã®è­˜åˆ¥ã‚¿ã‚¤ãƒ—<br>(ä¾‹ï¼šDOIã®å ´åˆã€DOIã¨ã™ã‚‹)
                 <input class="type">
               </label>
               <br>
               <label>
-                *ŠÖ˜A‚·‚é•¶Œ£“™‚Ìî•ñ<br>(—áFShiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
+                *é–¢é€£ã™ã‚‹æ–‡çŒ®ç­‰ã®æƒ…å ±<br>(ä¾‹ï¼šShiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
                 <input class="scheme">
               </label>
               <br>
               <label>
-                *ŠÖ˜A‚·‚é•¶Œ£“™‚ÌDOI<br>(—áF10.5047/eps.2010.05.003)
+                *é–¢é€£ã™ã‚‹æ–‡çŒ®ç­‰ã®DOI<br>(ä¾‹ï¼š10.5047/eps.2010.05.003)
                 <input class="scheme_uri">
               </label>
               <br>
               <label>
-                ŠÖ˜A‚·‚éƒRƒ“ƒeƒ“ƒc‚ÌƒXƒL[ƒ€‚Ìí—ŞiH‚±‚ê‚Í‰½j
+                é–¢é€£ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ã‚¹ã‚­ãƒ¼ãƒ ã®ç¨®é¡ï¼ˆï¼Ÿã“ã‚Œã¯ä½•ï¼‰
                 <input class="scheme_type">
               </label>
               <br>
               <label>
-                ŠÖ˜A‚·‚éƒRƒ“ƒeƒ“ƒc‚Æ‚ÌŠÖ˜A«iH‚±‚ê‚Í‰½j
+                é–¢é€£ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¨ã®é–¢é€£æ€§ï¼ˆï¼Ÿã“ã‚Œã¯ä½•ï¼‰
                 <input class="relation">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ŠÖ˜A‚·‚éƒRƒ“ƒeƒ“ƒc‚ğíœ</button>
+              <button class="remove c-button">é–¢é€£ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="relation-list-form-append c-button">ŠÖ˜A‚·‚éƒRƒ“ƒeƒ“ƒc‚ğ’Ç‰Á</button>
+          <button class="relation-list-form-append c-button">é–¢é€£ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- alternate-identifier-list •¡”‚Ì‘ã‘Ö¯•Êq‚ğ•\‚·—v‘f -->
+      <!-- alternate-identifier-list è¤‡æ•°ã®ä»£æ›¿è­˜åˆ¥å­ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>‘ã‘Ö¯•Êq</h4>
+          <h4>ä»£æ›¿è­˜åˆ¥å­</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>‘ã‘Ö¯•Êq‚Ìƒ^ƒCƒv‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢i—áFJST, COI, PMID, MRID, NAID, BIBCODE,OAIPMH, OTHER‚È‚Çj</p>
+          <p>ä»£æ›¿è­˜åˆ¥å­ã®ã‚¿ã‚¤ãƒ—ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ï¼ˆä¾‹ï¼šJST, COI, PMID, MRID, NAID, BIBCODE,OAIPMH, OTHERãªã©ï¼‰</p>
           <div class="alternate-identifier-list">
             <div class="item-body" style="display: none;">
               <label>
-                ‘ã‘Ö¯•Êq
+                ä»£æ›¿è­˜åˆ¥å­
                 <input class="alternate_identifier">
               </label>
               <br>
               <label>
-                ‘ã‘Ö¯•Êq‚Ìƒ^ƒCƒv
+                ä»£æ›¿è­˜åˆ¥å­ã®ã‚¿ã‚¤ãƒ—
                 <input class="type">
               </label>
               <br>
               <br>
-              <button class="remove c-button">‘ã‘Ö¯•Êq‚ğíœ</button>
+              <button class="remove c-button">ä»£æ›¿è­˜åˆ¥å­ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="alternate-identifier-list-form-append c-button">‘ã‘Ö¯•Êq‚ğ’Ç‰Á</button>
+          <button class="alternate-identifier-list-form-append c-button">ä»£æ›¿è­˜åˆ¥å­ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- content-language g—pŒ¾Œê -->
+      <!-- content-language ä½¿ç”¨è¨€èª -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* g—pŒ¾Œê</h4>
+          <h4>* ä½¿ç”¨è¨€èª</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>Œ´‘¥A‰pŒê‚Æ‚È‚è‚Ü‚·‚Ì‚ÅA‰pŒê‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B</p>
+          <p>åŸå‰‡ã€è‹±èªã¨ãªã‚Šã¾ã™ã®ã§ã€è‹±èªã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚</p>
           <div class="content-language">
             <div class="item-body" style="display: none;">
               <label>
-                *g—pŒ¾Œê
+                *ä½¿ç”¨è¨€èª
                 <select class="content_language">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
@@ -573,57 +573,57 @@
         </div>
       </div>
 
-      <!-- date-list ƒf[ƒ^ŒöŠJ“ú•t‚ğ•\‚·—v‘f -->
+      <!-- date-list ãƒ‡ãƒ¼ã‚¿å…¬é–‹æ—¥ä»˜ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* ƒf[ƒ^ŒöŠJ“ú•t</h4>
+          <h4>* ãƒ‡ãƒ¼ã‚¿å…¬é–‹æ—¥ä»˜</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^‚ªŒöŠJ‚³‚ê‚½“ú•t‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B‚Ç‚Ìƒo[ƒWƒ‡ƒ“‚Ìƒf[ƒ^‚ªŒöŠJ‚³‚ê‚½‚©‚ğ–¾¦‚·‚é‚½‚ß‚ÉAƒo[ƒWƒ‡ƒ“î•ñ‚à’Ç‹L‚µ‚Ä‚¨‚­‚±‚Æ‚ª–]‚Ü‚µ‚¢‚Å‚·B</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ãŒå…¬é–‹ã•ã‚ŒãŸæ—¥ä»˜ã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ã€‚ã©ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ‡ãƒ¼ã‚¿ãŒå…¬é–‹ã•ã‚ŒãŸã‹ã‚’æ˜ç¤ºã™ã‚‹ãŸã‚ã«ã€ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ã‚‚è¿½è¨˜ã—ã¦ãŠãã“ã¨ãŒæœ›ã¾ã—ã„ã§ã™ã€‚</p>
           <div class="date-list">
             <div class="item-body" style="display: none;">
               <label>
-                *ƒf[ƒ^ŒöŠJ“ú•t<br>(—áF2022-01-19 (version: v01))
+                *ãƒ‡ãƒ¼ã‚¿å…¬é–‹æ—¥ä»˜<br>(ä¾‹ï¼š2022-01-19 (version: v01))
                 <input class="date">
               </label>
               <br>
               <label>
-                *ƒf[ƒ^ŒöŠJÏ‚İ‚©”Û‚©H<br>(—áFŠî–{“I‚ÉŒöŠJ‚³‚ê‚½‚à‚Ì‚ª‘ÎÛ‚Å‚·‚Ì‚ÅA‚±‚±‚É‚ÍIssued‚Æ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B
+                *ãƒ‡ãƒ¼ã‚¿å…¬é–‹æ¸ˆã¿ã‹å¦ã‹ï¼Ÿ<br>(ä¾‹ï¼šåŸºæœ¬çš„ã«å…¬é–‹ã•ã‚ŒãŸã‚‚ã®ãŒå¯¾è±¡ã§ã™ã®ã§ã€ã“ã“ã«ã¯Issuedã¨è¨˜å…¥ã—ã¦ãã ã•ã„ã€‚
                 <input class="type">
               </label>
               <br>
               <br>
-              <button class="remove c-button">“ú•t‚ğíœ</button>
+              <button class="remove c-button">æ—¥ä»˜ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="date-list-form-append c-button">“ú•t‚ğ’Ç‰Á</button>
+          <button class="date-list-form-append c-button">æ—¥ä»˜ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- resource-type ƒŠƒ\[ƒXƒ^ƒCƒv -->
+      <!-- resource-type ãƒªã‚½ãƒ¼ã‚¹ã‚¿ã‚¤ãƒ— -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* ŒöŠJƒf[ƒ^‚Ìƒ^ƒCƒv</h4>
+          <h4>* å…¬é–‹ãƒ‡ãƒ¼ã‚¿ã®ã‚¿ã‚¤ãƒ—</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>‚±‚±‚É‚ÍŒöŠJƒf[ƒ^‚Ìƒ^ƒCƒv‚ğ‹L“ü‚µ‚Ü‚·B—á‚¦‚ÎA’Êí‚Ì”’lƒf[ƒ^‚Å‚ ‚ê‚ÎADatasets‚Æ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B</p>
+          <p>ã“ã“ã«ã¯å…¬é–‹ãƒ‡ãƒ¼ã‚¿ã®ã‚¿ã‚¤ãƒ—ã‚’è¨˜å…¥ã—ã¾ã™ã€‚ä¾‹ãˆã°ã€é€šå¸¸ã®æ•°å€¤ãƒ‡ãƒ¼ã‚¿ã§ã‚ã‚Œã°ã€Datasetsã¨è¨˜å…¥ã—ã¦ãã ã•ã„ã€‚</p>
           <div class="resource-type">
             <div class="item-body" style="display: none;">
               <label>
-                *ŒöŠJƒf[ƒ^ƒZƒbƒg‚Ì–¼‘O<br>(—áF¥ê3¬•ª‚Ìê‡FThree-dimensional (H, D, and Z components) geomagnetic field data)
+                *å…¬é–‹ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆã®åå‰<br>(ä¾‹ï¼šç£å ´3æˆåˆ†ã®å ´åˆï¼šThree-dimensional (H, D, and Z components) geomagnetic field data)
                 <input class="resource_type">
               </label>
               <br>
               <label>
-                *ŒöŠJƒf[ƒ^‚Ìƒ^ƒCƒv<br>(—áFDatasets)
+                *å…¬é–‹ãƒ‡ãƒ¼ã‚¿ã®ã‚¿ã‚¤ãƒ—<br>(ä¾‹ï¼šDatasets)
                 <input class="type">
               </label>
               <br>
@@ -632,116 +632,116 @@
         </div>
       </div>
 
-      <!-- size-list •¡”‚ÌƒTƒCƒY‚ğ•\‚·—v‘f -->
+      <!-- size-list è¤‡æ•°ã®ã‚µã‚¤ã‚ºã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>ƒTƒCƒY</h4>
+          <h4>ã‚µã‚¤ã‚º</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^—e—Ê(xx[MB]jAƒy[ƒW”(xx[pages])‚ğ‚¢‚ê‚Ä‚­‚¾‚³‚¢B</p>
+          <p>ãƒ‡ãƒ¼ã‚¿å®¹é‡(xx[MB]ï¼‰ã€ãƒšãƒ¼ã‚¸æ•°(xx[pages])ã‚’ã„ã‚Œã¦ãã ã•ã„ã€‚</p>
           <div class="size-list">
             <div class="item-body" style="display: none;">
               <label>
-                ƒTƒCƒY
+                ã‚µã‚¤ã‚º
                 <input class="size">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ƒTƒCƒY‚ğíœ</button>
+              <button class="remove c-button">ã‚µã‚¤ã‚ºã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="size-list-form-append c-button">ƒTƒCƒY‚ğ’Ç‰Á</button>
+          <button class="size-list-form-append c-button">ã‚µã‚¤ã‚ºã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- rights-list •¡”‚ÌŒ —˜î•ñ‚ğ•\‚·—v‘f -->
+      <!-- rights-list è¤‡æ•°ã®æ¨©åˆ©æƒ…å ±ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* ƒf[ƒ^—˜—p‹K–ñ‚âRules of the Road‚È‚Ç</h4>
+          <h4>* ãƒ‡ãƒ¼ã‚¿åˆ©ç”¨è¦ç´„ã‚„Rules of the Roadãªã©</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^—˜—p‹K–ñ‚âRules of the Road‚È‚Ç‚ğ‹LÚ‚¢‚½‚¾‚­‚©A‚à‚µ‚­‚Í‚»‚ê‚ç‚Ö‚ÌƒŠƒ“ƒNƒAƒhƒŒƒX‚ğ‚¨Šè‚¢‚µ‚Ü‚·</p>
+          <p>ãƒ‡ãƒ¼ã‚¿åˆ©ç”¨è¦ç´„ã‚„Rules of the Roadãªã©ã‚’è¨˜è¼‰ã„ãŸã ãã‹ã€ã‚‚ã—ãã¯ãã‚Œã‚‰ã¸ã®ãƒªãƒ³ã‚¯ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ãŠé¡˜ã„ã—ã¾ã™</p>
           <div class="rights-list">
             <div class="item-body" style="display: none;">
               <label>
-                Œ —˜î•ñ
+                æ¨©åˆ©æƒ…å ±
                 <input class="rights">
               </label>
               <br>
               <label>
-                ƒf[ƒ^—˜—p‹K–ñ‚âRules of the Road‚ÌURI
+                ãƒ‡ãƒ¼ã‚¿åˆ©ç”¨è¦ç´„ã‚„Rules of the Roadã®URI
                 <input class="uri">
               </label>
               <br>
               <br>
-              <button class="remove c-button">Œ —˜î•ñ‚ğíœ</button>
+              <button class="remove c-button">æ¨©åˆ©æƒ…å ±ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="rights-list-form-append c-button">Œ —˜î•ñ‚ğ’Ç‰Á</button>
+          <button class="rights-list-form-append c-button">æ¨©åˆ©æƒ…å ±ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- description-list •¡”‚Ì’Ç‰Áî•ñ‚ğ•\‚·—v‘f -->
+      <!-- description-list è¤‡æ•°ã®è¿½åŠ æƒ…å ±ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>*ƒf[ƒ^‚ÉŠÖ‚·‚éà–¾–€</h4>
+          <h4>*ãƒ‡ãƒ¼ã‚¿ã«é–¢ã™ã‚‹èª¬æ˜äº‹é …</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>’Ç‰Á–€‚ª‚ ‚ê‚ÎAƒeƒLƒXƒgŒ`®‚Å‹LÚ‚ğ‚¨Šè‚¢‚µ‚Ü‚·</p>
+          <p>è¿½åŠ äº‹é …ãŒã‚ã‚Œã°ã€ãƒ†ã‚­ã‚¹ãƒˆå½¢å¼ã§è¨˜è¼‰ã‚’ãŠé¡˜ã„ã—ã¾ã™</p>
           <div class="description-list">
             <div class="item-body" style="display: none;">
               <label>
-                ’Ç‰Áî•ñ(“à—e‹Lq)
+                è¿½åŠ æƒ…å ±(å†…å®¹è¨˜è¿°)
                 <textarea class="description" rows="5" cols="40"></textarea>
               </label>
               <br>
               <label>
-                ’Ç‰Á(“à—e‹Lq)î•ñƒ^ƒCƒv
+                è¿½åŠ (å†…å®¹è¨˜è¿°)æƒ…å ±ã‚¿ã‚¤ãƒ—
                 <input class="type">
               </label>
               <br>
               <label>
-                “à—e‹Lqî•ñ‚Ì‹LqŒ¾Œê
+                å†…å®¹è¨˜è¿°æƒ…å ±ã®è¨˜è¿°è¨€èª
                 <select class="lang">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
               <br>
-              <button class="remove c-button">“à—e‹Lqî•ñ‚ğíœ</button>
+              <button class="remove c-button">å†…å®¹è¨˜è¿°æƒ…å ±ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="description-list-form-append c-button">“à—e‹Lqî•ñ‚ğ’Ç‰Á</button>
+          <button class="description-list-form-append c-button">å†…å®¹è¨˜è¿°æƒ…å ±ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- signature ƒVƒOƒlƒ`ƒƒ -->
+      <!-- signature ã‚·ã‚°ãƒãƒãƒ£ -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>ƒVƒOƒlƒ`ƒƒ</h4>
+          <h4>ã‚·ã‚°ãƒãƒãƒ£</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^‚ğ•ÛØ‚·‚é‹@ŠÖ‚âA‘gDAŒÂl‚Ìî•ñ‚ğ‚¢‚ê‚Ä‚­‚¾‚³‚¢</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã‚’ä¿è¨¼ã™ã‚‹æ©Ÿé–¢ã‚„ã€çµ„ç¹”ã€å€‹äººã®æƒ…å ±ã‚’ã„ã‚Œã¦ãã ã•ã„</p>
           <div class="signature">
             <div class="item-body" style="display: none;">
               <label>
-                ƒVƒOƒlƒ`ƒƒ
+                ã‚·ã‚°ãƒãƒãƒ£
                 <input class="signature">
               </label>
               <br>
@@ -750,106 +750,106 @@
         </div>
       </div>
 
-      <!-- geolocation-list •¡”‚ÌˆÊ’uî•ñ‚ğ•\‚·—v‘f -->
+      <!-- geolocation-list è¤‡æ•°ã®ä½ç½®æƒ…å ±ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>ˆÊ’uî•ñ</h4>
+          <h4>ä½ç½®æƒ…å ±</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·</p>
+          <p>é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™</p>
           <div class="geolocation-list">
             <div class="item-body" style="display: none;">
               <label>
-                ‹óŠÔ‚Ìˆê“_‚ğ‹L“ü‚·‚éB—ái31.233 ]67.302iˆÜ“x Œo“xBƒXƒy[ƒX‹æØ‚èjAˆÜ“x‚Í–kˆÜ+/“ìˆÜ-AŒo“x‚Í“ŒŒo+/¼Œo-BŒo“x‚Ì”ÍˆÍ‚Í-180‚©‚ç180‚Å³‚Ì’l‚Í“Œ•”‚ğ•\‚µ‚Ü‚·BˆÜ“x‚Ì”ÍˆÍ‚Í-90‚©‚ç90‚Å³‚Ì’l‚Í–k•”‚ğ•\‚µ‚Ü‚·B
+                ç©ºé–“ã®ä¸€ç‚¹ã‚’è¨˜å…¥ã™ã‚‹ã€‚ä¾‹ï¼ˆ31.233 â€67.302ï¼ˆç·¯åº¦ çµŒåº¦ã€‚ã‚¹ãƒšãƒ¼ã‚¹åŒºåˆ‡ã‚Šï¼‰ã€ç·¯åº¦ã¯åŒ—ç·¯+/å—ç·¯-ã€çµŒåº¦ã¯æ±çµŒ+/è¥¿çµŒ-ã€‚çµŒåº¦ã®ç¯„å›²ã¯-180ã‹ã‚‰180ã§æ­£ã®å€¤ã¯æ±éƒ¨ã‚’è¡¨ã—ã¾ã™ã€‚ç·¯åº¦ã®ç¯„å›²ã¯-90ã‹ã‚‰90ã§æ­£ã®å€¤ã¯åŒ—éƒ¨ã‚’è¡¨ã—ã¾ã™ã€‚
                 <input class="geolocation_point">
               </label>
               <br>
               <label>
-                ƒ{ƒbƒNƒXó‚Ì‹óŠÔ“I”ÍˆÍ‚ğ‹L“ü‚·‚éB41.090 ]71.032 42.893 ]68.211i“ì¼‘¤‚ÌˆÜ“x Œo“x –k“Œ‘¤‚ÌˆÜ“x Œo“xBƒXƒy[ƒX‹æØ‚èjˆÜ“x‚Í–kˆÜ+/“ìˆÜ-AŒo“x‚Í“ŒŒo+/¼Œo-BŒo“x‚Ì”ÍˆÍ‚Í-180‚©‚ç180‚Å³‚Ì’l‚Í“Œ•”‚ğ•\‚·BˆÜ“x‚Ì”ÍˆÍ‚Í-90‚©‚ç90‚Å³‚Ì’l‚Í–k•”‚ğ•\‚·B
+                ãƒœãƒƒã‚¯ã‚¹çŠ¶ã®ç©ºé–“çš„ç¯„å›²ã‚’è¨˜å…¥ã™ã‚‹ã€‚41.090 â€71.032 42.893 â€68.211ï¼ˆå—è¥¿å´ã®ç·¯åº¦ çµŒåº¦ åŒ—æ±å´ã®ç·¯åº¦ çµŒåº¦ã€‚ã‚¹ãƒšãƒ¼ã‚¹åŒºåˆ‡ã‚Šï¼‰ç·¯åº¦ã¯åŒ—ç·¯+/å—ç·¯-ã€çµŒåº¦ã¯æ±çµŒ+/è¥¿çµŒ-ã€‚çµŒåº¦ã®ç¯„å›²ã¯-180ã‹ã‚‰180ã§æ­£ã®å€¤ã¯æ±éƒ¨ã‚’è¡¨ã™ã€‚ç·¯åº¦ã®ç¯„å›²ã¯-90ã‹ã‚‰90ã§æ­£ã®å€¤ã¯åŒ—éƒ¨ã‚’è¡¨ã™ã€‚
                 <input class="geolocation_box">
               </label>
               <br>
               <label>
-                ˆÊ’uî•ñ(ƒtƒŠ[ƒeƒLƒXƒgF’n—ã‚Ì’n“_‚Ì–¼Ì‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢jB
+                ä½ç½®æƒ…å ±(ãƒ•ãƒªãƒ¼ãƒ†ã‚­ã‚¹ãƒˆï¼šåœ°ç†ä¸Šã®åœ°ç‚¹ã®åç§°ã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ï¼‰ã€‚
                 <input class="geolocation_place">
               </label>
               <br>
               <br>
-              <button class="remove c-button">ˆÊ’uî•ñ‚ğíœ</button>
+              <button class="remove c-button">ä½ç½®æƒ…å ±ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="geolocation-list-form-append c-button">ˆÊ’uî•ñ‚ğ’Ç‰Á</button>
+          <button class="geolocation-list-form-append c-button">ä½ç½®æƒ…å ±ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- fund-list •¡”‚Ì•¬‹@ŠÖ‚ğ•\‚·—v‘f -->
+      <!-- fund-list è¤‡æ•°ã®åŠ©æˆæ©Ÿé–¢ã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>•¬‹@ŠÖ</h4>
+          <h4>åŠ©æˆæ©Ÿé–¢</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·€–Ú‚Ìà–¾•¶ƒTƒ“ƒvƒ‹‚Å‚·</p>
+          <p>é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™é …ç›®ã®èª¬æ˜æ–‡ã‚µãƒ³ãƒ—ãƒ«ã§ã™</p>
           <div class="fund-list">
             <div class="item-body" style="display: none;">
               <label>
-                •¬‹@ŠÖ–¼Ì
+                åŠ©æˆæ©Ÿé–¢åç§°
                 <input class="funder_name">
               </label>
               <br>
               <label>
-                •¬‹@ŠÖ–¼‚Ì‹LqŒ¾Œê
+                åŠ©æˆæ©Ÿé–¢åã®è¨˜è¿°è¨€èª
                 <select class="lang">
-                  <option value="">‚È‚µ</option>
+                  <option value="">ãªã—</option>
                 </select>
               </label>
               <br>
               <label>
-                •¬‹@ŠÖIDFThe Crossref Funder Registry‚æ‚èfunder ID‚ğæ“¾‚µ‚½ê‡‚É"FundRefh‚ğw’è‚·‚éBGRID = Global Research Identifier DatabaseAISNI = International Standard Name IdentifierAROR = Research Organization RegistryANID = NISTEP‘åŠwEŒö“I‹@ŠÖ–¼«‘‚Ì‹@ŠÖID
+                åŠ©æˆæ©Ÿé–¢IDï¼šThe Crossref Funder Registryã‚ˆã‚Šfunder IDã‚’å–å¾—ã—ãŸå ´åˆã«"FundRefâ€ã‚’æŒ‡å®šã™ã‚‹ã€‚GRID = Global Research Identifier Databaseã€ISNI = International Standard Name Identifierã€ROR = Research Organization Registryã€NID = NISTEPå¤§å­¦ãƒ»å…¬çš„æ©Ÿé–¢åè¾æ›¸ã®æ©Ÿé–¢ID
                 <input class="funder_identifier">
               </label>
               <br>
               <label>
-                •¬‹@ŠÖIDƒ^ƒCƒv
+                åŠ©æˆæ©Ÿé–¢IDã‚¿ã‚¤ãƒ—
                 <input class="type">
               </label>
               <br>
 
               <label>
-                •¬”Ô†(ƒOƒ‰ƒ“ƒg”Ô†)Aƒtƒ@ƒ“ƒh”Ô†
+                åŠ©æˆç•ªå·(ã‚°ãƒ©ãƒ³ãƒˆç•ªå·)ã€ãƒ•ã‚¡ãƒ³ãƒ‰ç•ªå·
                 <input class="award_number">
               </label>
               <br>
               <br>
-              <button class="remove c-button">•¬‹@ŠÖ‚ğíœ</button>
+              <button class="remove c-button">åŠ©æˆæ©Ÿé–¢ã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="fund-list-form-append c-button">•¬‹@ŠÖ‚ğ’Ç‰Á</button>
+          <button class="fund-list-form-append c-button">åŠ©æˆæ©Ÿé–¢ã‚’è¿½åŠ </button>
         </div>
       </div>
 
-      <!-- multiple-resolution-priority ƒ}ƒ‹ƒ`ƒvƒ‹—Dæ“x -->
+      <!-- multiple-resolution-priority ãƒãƒ«ãƒãƒ—ãƒ«å„ªå…ˆåº¦ -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>ƒ}ƒ‹ƒ`ƒvƒ‹—Dæ“x</h4>
+          <h4>ãƒãƒ«ãƒãƒ—ãƒ«å„ªå…ˆåº¦</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>“o˜^‚·‚éƒRƒ“ƒeƒ“ƒc‚Ìƒ}ƒ‹ƒ`ƒvƒ‹ƒŒƒ]ƒŠƒ…[ƒVƒ‡ƒ“‚ğ‹–‰Â‚·‚éê‡‚ÉA1`999i1‚ªÅ—Dæj‚Ì”’l‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢</p>
+          <p>ç™»éŒ²ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒãƒ«ãƒãƒ—ãƒ«ãƒ¬ã‚¾ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¨±å¯ã™ã‚‹å ´åˆã«ã€1ï½999ï¼ˆ1ãŒæœ€å„ªå…ˆï¼‰ã®æ•°å€¤ã‚’æŒ‡å®šã—ã¦ãã ã•ã„</p>
           <div class="multiple-resolution-priority">
             <div class="item-body" style="display: none;">
               <label>
-                ƒ}ƒ‹ƒ`ƒvƒ‹—Dæ“x
+                ãƒãƒ«ãƒãƒ—ãƒ«å„ªå…ˆåº¦
                 <input class="multiple_resolution_priority">
               </label>
               <br>
@@ -858,7 +858,7 @@
         </div>
       </div>
 
-      <!-- isas-data-list •¡”‚Ìisas_data‚ğ•\‚·—v‘f -->
+      <!-- isas-data-list è¤‡æ•°ã®isas_dataã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
           <h4>* isas_data_list</h4>
@@ -866,9 +866,9 @@
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^‚ğŒöŠJ‚µ‚Ä‚¢‚éURL“™‚Ì‹LÚ‚ğ‚¨Šè‚¢‚µ‚Ü‚·i—áFhttps://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã‚’å…¬é–‹ã—ã¦ã„ã‚‹URLç­‰ã®è¨˜è¼‰ã‚’ãŠé¡˜ã„ã—ã¾ã™ï¼ˆä¾‹ï¼šhttps://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/</p>
           <div class="isas-data-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -877,15 +877,15 @@
               </label>
               <br>
               <label>
-                —áFDirectory of the dataset (all versions, ERG Science Center)
+                ä¾‹ï¼šDirectory of the dataset (all versions, ERG Science Center)
                 <input class="text">
               </label>
               <br>
               <br>
-              <button class="remove c-button">isas_data‚ğíœ</button>
+              <button class="remove c-button">isas_dataã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="isas-data-list-form-append c-button">isas_data‚ğ’Ç‰Á</button>
+          <button class="isas-data-list-form-append c-button">isas_dataã‚’è¿½åŠ </button>
         </div>
       </div>
 
@@ -897,9 +897,9 @@
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>ƒf[ƒ^‚ÉŠÖ‚·‚é•¶Œ£‚Ìî•ñ‚ğ‹LÚ‚µ‚Ä‚­‚¾‚³‚¢i—áFShiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021j</p>
+          <p>ãƒ‡ãƒ¼ã‚¿ã«é–¢ã™ã‚‹æ–‡çŒ®ã®æƒ…å ±ã‚’è¨˜è¼‰ã—ã¦ãã ã•ã„ï¼ˆä¾‹ï¼šShiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021ï¼‰</p>
           <div class="isas_citation">
             <div class="item-body" style="display: none;">
               <label>
@@ -912,7 +912,7 @@
         </div>
       </div>
 
-      <!-- isas-metadata-date-list •¡”‚Ìisas_metadata_date‚ğ•\‚·—v‘f -->
+      <!-- isas-metadata-date-list è¤‡æ•°ã®isas_metadata_dateã‚’è¡¨ã™è¦ç´  -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
           <h4>*isas_metadata_date_list</h4>
@@ -920,9 +920,9 @@
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XML‚ğ•Û‘¶</button>
+            <button class="xml-download c-button">XMLã‚’ä¿å­˜</button>
           </div>
-          <p>Šî–{“I‚ÉAŒöŠJÏ‚İ‚©‚Æv‚¢‚Ü‚·‚Ì‚ÅA"Issued"‚Æ‹LÚ‚­‚¾‚³‚¢</p>
+          <p>åŸºæœ¬çš„ã«ã€å…¬é–‹æ¸ˆã¿ã‹ã¨æ€ã„ã¾ã™ã®ã§ã€"Issued"ã¨è¨˜è¼‰ãã ã•ã„</p>
           <div class="isas-metadata-date-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -936,25 +936,25 @@
               </label>
               <br>
               <br>
-              <button class="remove c-button">isas_metadata_date‚ğíœ</button>
+              <button class="remove c-button">isas_metadata_dateã‚’å‰Šé™¤</button>
             </div>
           </div>
-          <button class="isas-metadata-date-list-form-append c-button">isas_metadata_date‚ğ’Ç‰Á</button>
+          <button class="isas-metadata-date-list-form-append c-button">isas_metadata_dateã‚’è¿½åŠ </button>
         </div>
       </div>
 
       <br>
       <br>
-      <button class="remove_content c-button">ƒƒ^ƒf[ƒ^‚ğíœ</button>
+      <button class="remove_content c-button">ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã‚’å‰Šé™¤</button>
     </div>
   </div>
-  <button class="content-form-append c-button">ƒƒ^ƒf[ƒ^‚ğ’Ç‰Á</button>
+  <button class="content-form-append c-button">ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã‚’è¿½åŠ </button>
   <br>
   <br>
   <hr>
   <br>
   <input type="hidden" id="xml-filename" value="JaLC_research_data.xml">
-  <button id="xml-download" class="c-button">XML‚ğ•Û‘¶</button>
+  <button id="xml-download" class="c-button">XMLã‚’ä¿å­˜</button>
 
   <script src="iso_code.js"></script>
   <script src="jalc_xml.js"></script>
