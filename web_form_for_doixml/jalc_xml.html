@@ -635,7 +635,7 @@
       <!-- size-list 複数のサイズを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>サイズ</h4>
+          <h4>データのサイズ</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -672,7 +672,7 @@
           <div class="rights-list">
             <div class="item-body" style="display: none;">
               <label>
-                権利情報
+                ライセンス情報 (CC BYなど）
                 <input class="rights">
               </label>
               <br>
@@ -682,10 +682,10 @@
               </label>
               <br>
               <br>
-              <button class="remove c-button">権利情報を削除</button>
+              <button class="remove c-button">データ利用規約を削除</button>
             </div>
           </div>
-          <button class="rights-list-form-append c-button">権利情報を追加</button>
+          <button class="rights-list-form-append c-button">データ利用規約を追加</button>
         </div>
       </div>
 
@@ -708,7 +708,7 @@
               </label>
               <br>
               <label>
-                追加(内容記述)情報タイプ
+                追加(内容記述)情報タイプ（Abstract と書いてください）
                 <input class="type">
               </label>
               <br>
@@ -730,7 +730,7 @@
       <!-- signature シグネチャ -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>シグネチャ</h4>
+          <h4>シグネチャ（不要）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -760,7 +760,7 @@
             <div></div>
             <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <p>地上観測の場合観測点座標などをいれてください。以下の"一点"、"範囲"もしくはフリーテキストに入力してください。</p>
           <div class="geolocation-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -769,7 +769,7 @@
               </label>
               <br>
               <label>
-                ボックス状の空間的範囲を記入する。41.090 ‐71.032 42.893 ‐68.211（南西側の緯度 経度 北東側の緯度 経度。スペース区切り）緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表す。緯度の範囲は-90から90で正の値は北部を表す。
+                ボックス状の空間範囲を記入する。41.090 ‐71.032 42.893 ‐68.211（南西側の緯度 経度 北東側の緯度 経度。スペース区切り）緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表す。緯度の範囲は-90から90で正の値は北部を表す。
                 <input class="geolocation_box">
               </label>
               <br>
@@ -789,14 +789,14 @@
       <!-- fund-list 複数の助成機関を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>助成機関</h4>
+          <h4>助成機関(任意）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
             <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです項目の説明文サンプルです</p>
+          <p>JSPSなどをいれてください</p>
           <div class="fund-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -812,7 +812,7 @@
               </label>
               <br>
               <label>
-                助成機関ID：The Crossref Funder Registryよりfunder IDを取得した場合に"FundRef”を指定する。GRID = Global Research Identifier Database、ISNI = International Standard Name Identifier、ROR = Research Organization Registry、NID = NISTEP大学・公的機関名辞書の機関ID
+                助成機関ID：The Crossref Funder Registryよりfunder IDを取得した場合に"FundRef”を指定する。GRID = Global Research Identifier Database、ISNI = International Standard Name Identifier、ROR = Research Organization Registry、NID = NISTEP大学・公的機関名辞書の機関ID（任意)
                 <input class="funder_identifier">
               </label>
               <br>
@@ -838,7 +838,7 @@
       <!-- multiple-resolution-priority マルチプル優先度 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>マルチプル優先度</h4>
+          <h4>マルチプル優先度(不要）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -861,7 +861,7 @@
       <!-- isas-data-list 複数のisas_dataを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* isas_data_list</h4>
+          <h4>* データリポジトリ情報</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -892,14 +892,14 @@
       <!-- isas_citation isas_citation -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* isas_citation</h4>
+          <h4>* データを引用する際の情報</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
             <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データに関する文献の情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）</p>
+          <p>データ引用情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）</p>
           <div class="isas_citation">
             <div class="item-body" style="display: none;">
               <label>
@@ -915,23 +915,23 @@
       <!-- isas-metadata-date-list 複数のisas_metadata_dateを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>*isas_metadata_date_list</h4>
+          <h4>*変更履歴</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
             <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>基本的に、公開済みかと思いますので、"Issued"と記載ください</p>
+          <p>変更履歴を記載します</p>
           <div class="isas-metadata-date-list">
             <div class="item-body" style="display: none;">
               <label>
-                type
+                type(公開済みの場合"Issued"、アップデートの場合 "Updatedd"と記載ください)
                 <input class="type">
               </label>
               <br>
               <label>
-                date
+                date(変更履歴の日付をいれてください）
                 <input class="date">
               </label>
               <br>
