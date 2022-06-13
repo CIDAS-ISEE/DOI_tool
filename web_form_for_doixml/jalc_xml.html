@@ -39,7 +39,7 @@
       <!-- title-list 複数のタイトルを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データセットのタイトル / Title of the dataset </h4>
+          <h4>* Title of the dataset / データセットのタイトル</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -76,7 +76,7 @@
       <!-- subject-list 複数のサブジェクトを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データのサブジェクト / Scientific keywords for the data </h4>
+          <h4>* Scientific keywords for the data データのサブジェクト</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -119,7 +119,7 @@
       <!-- creator-list 複数の作成者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データ作成者 / Creators of the data</h4>
+          <h4>* Creators of the data データ作成者</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -230,7 +230,7 @@
       <!-- publication-date 発行年月日を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データの発行年月日 / Publication date of the data</h4>
+          <h4>* Publication date of the data データの発行年月日</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -263,7 +263,7 @@
       <!-- publisher 出版者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データを出版した人 or 組織 / Publisher of the data</h4>
+          <h4>* Publisher of the data データを出版した人 or 組織 </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -300,7 +300,7 @@
       <!-- contributor-list 複数の寄与者を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データ製造に寄与した個人 or 機関 / Contributors to the data creation</h4>
+          <h4>* Contributors to the data creation データ製造に寄与した個人 or 機関 </h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
@@ -415,23 +415,23 @@
       <!-- edition 版を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データファイルのバージョン</h4>
+          <h4>* データファイルのバージョン / Version of data file</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>公開されているデータの品質(例えば、研究に利用できるような物理量に変換されているか？、校正済みか未校正か)とデータのバージョンを記入します。</p>
+          <p>公開されているデータの品質(例えば、研究に利用できるような物理量に変換されているか？、校正済みか未校正か)とデータのバージョンを記入します。 / Please provide the information on quality and version of published data.</p>
           <div class="edition">
             <div class="item-body" style="display: none;">
               <label>
-                *データの品質（校正済み/未校正かなど）<br>(例：The official release version for scientific use containing fully-calibrated data in physical units)
+                *データの品質（校正済み/未校正かなど） / Quality of data (calibrated or uncalibrated etc.)<br>(ex. The official release version for scientific use containing fully-calibrated data in physical units)
                 <input class="variation">
               </label>
               <br>
               <label>
-                *バージョン<br>(例：v01)
+                *バージョン / Version<br>(ex. v01)
                 <input class="version">
               </label>
               <br>
@@ -443,126 +443,126 @@
       <!-- format-list 複数のフォーマットを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データファイルの形式(CDF、netCDFなど)</h4>
+          <h4>* データファイルの形式(CDF、netCDFなど) / Data format (CDF, netCDF etc.)</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>データファイルのフォーマット(CDF、netCDFなど）をいれてください。</p>
+          <p>データファイルのフォーマット(CDF、netCDFなど）をいれてください。 / Please provide the information of data format (CDF, netCDF etc.).</p>
           <div class="format-list">
             <div class="item-body" style="display: none;">
               <label>
-                *フォーマット
+                *フォーマット/Format
                 <input class="format">
               </label>
               <br>
               <br>
-              <button class="remove c-button">フォーマットを削除</button>
+              <button class="remove c-button">フォーマットを削除 / Remove the information of data format.</button>
             </div>
           </div>
-          <button class="format-list-form-append c-button">フォーマットを追加</button>
+          <button class="format-list-form-append c-button">フォーマットを追加 / Add the information of data format.</button>
         </div>
       </div>
 
       <!-- relation-list 複数の関連するコンテンツを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* 参考文献についての情報など</h4>
+          <h4>* 参考文献についての情報など / Information of references</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>公開データに関連する参考文献や、観測点、観測測器、プロジェクト等の情報を入れてください。</p>
+          <p>公開データに関連する参考文献や、観測点、観測測器、プロジェクト等の情報を入れてください。 / Please provide the information on references, observatories, project related to published data.</p>
           <div class="relation-list">
             <div class="item-body" style="display: none;">
               <label>
-                *関連する文献等<br>(例：参考文献の場合、Referencesとする)
+                *関連する文献等 / References etc.<br>(ex. References)
                 <input class="related_content">
               </label>
               <br>
               <label>
-                *関連する文献等の識別タイプ<br>(例：DOIの場合、DOIとする)
+                *関連する文献等の識別子 / Identifier of related references etc.<br>(ex. DOI)
                 <input class="type">
               </label>
               <br>
               <label>
-                *関連する文献等の情報<br>(例：Shiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
+                *関連する文献等の情報 / Information on related references<br>(ex. Shiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
                 <input class="scheme">
               </label>
               <br>
               <label>
-                *関連する文献等のDOI<br>(例：10.5047/eps.2010.05.003)
+                *関連する文献等のDOI / DOI of related references<br>(ex. 10.5047/eps.2010.05.003)
                 <input class="scheme_uri">
               </label>
               <br>
-              <label>
-                関連するコンテンツのスキームの種類（？これは何）
-                <input class="scheme_type">
+              <label> 
+                関連する計画案 / Related Scheme   
+                <input class="scheme_type"> 
               </label>
               <br>
               <label>
-                関連するコンテンツとの関連性（？これは何）
+                その他の関連事項 / Others 
                 <input class="relation">
-              </label>
+              </label> 
+              <br> 
               <br>
-              <br>
-              <button class="remove c-button">関連するコンテンツを削除</button>
+              <button class="remove c-button">関連するコンテンツを削除 / Remove related contents.</button>
             </div>
           </div>
-          <button class="relation-list-form-append c-button">関連するコンテンツを追加</button>
+          <button class="relation-list-form-append c-button">関連するコンテンツを追加 / Add related contents.</button>
         </div>
       </div>
 
       <!-- alternate-identifier-list 複数の代替識別子を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>代替識別子</h4>
+          <h4>代替識別子 / Alternative identifier</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>代替識別子のタイプを指定してください（例：JST, COI, PMID, MRID, NAID, BIBCODE,OAIPMH, OTHERなど）</p>
+          <p>代替識別子のタイプを指定してください（例：JST, COI, PMID, MRID, NAID, BIBCODE,OAIPMH, OTHERなど） / Please specify a type of alternative identifier (ex:JST, COI, PMID, MRID, NAID, BIBCODE,OAIPMH, OTHER)</p>
           <div class="alternate-identifier-list">
             <div class="item-body" style="display: none;">
               <label>
-                代替識別子
+                代替識別子 / Alternative identifier
                 <input class="alternate_identifier">
               </label>
               <br>
               <label>
-                代替識別子のタイプ
+                代替識別子のタイプ / Type of alternative identifier
                 <input class="type">
               </label>
               <br>
               <br>
-              <button class="remove c-button">代替識別子を削除</button>
+              <button class="remove c-button">代替識別子を削除 / Remove alternative identifier.</button>
             </div>
           </div>
-          <button class="alternate-identifier-list-form-append c-button">代替識別子を追加</button>
+          <button class="alternate-identifier-list-form-append c-button">代替識別子を追加 / Add alternative identifier.</button>
         </div>
       </div>
 
       <!-- content-language 使用言語 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* 使用言語</h4>
+          <h4>* 使用言語 / Used language</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file</button>
           </div>
-          <p>原則、英語となりますので、英語を選択してください。</p>
+          <p>原則、英語となりますので、英語を選択してください。 / Please select English in principle.</p>
           <div class="content-language">
             <div class="item-body" style="display: none;">
               <label>
-                *使用言語
+                *使用言語 / Used language
                 <select class="content_language">
                   <option value="">なし</option>
                 </select>
@@ -576,54 +576,54 @@
       <!-- date-list データ公開日付を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データ公開日付</h4>
+          <h4>* データ公開日付 / Data publised date</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>データが公開された日付を記入してください。どのバージョンのデータが公開されたかを明示するために、バージョン情報も追記しておくことが望ましいです。</p>
+          <p>データが公開された日付を記入してください。どのバージョンのデータが公開されたかを明示するために、バージョン情報も追記しておくことが望ましいです。 / Please provide the information on data published date. It is desirable that you add the information on data version to show which data version has been published.</p>
           <div class="date-list">
             <div class="item-body" style="display: none;">
               <label>
-                *データ公開日付<br>(例：2022-01-19 (version: v01))
+                *データ公開日付 / Data published date<br>(ex：2022-01-19 (version: v01))
                 <input class="date">
               </label>
               <br>
               <label>
-                *データ公開済みか否か？<br>(例：基本的に公開されたものが対象ですので、ここにはIssuedと記入してください。
+                *データ公開済みか否か？ / Have data already been published or not yet?<br>(例：基本的に公開されたものが対象ですので、ここにはIssuedと記入してください。/ex. Please fill out "Issued" because published date are basically targeted.
                 <input class="type">
               </label>
               <br>
               <br>
-              <button class="remove c-button">日付を削除</button>
+              <button class="remove c-button">日付を削除 / Remove date.</button>
             </div>
           </div>
-          <button class="date-list-form-append c-button">日付を追加</button>
+          <button class="date-list-form-append c-button">日付を追加 / Add date.</button>
         </div>
       </div>
 
       <!-- resource-type リソースタイプ -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* 公開データのタイプ</h4>
+          <h4>* 公開データのタイプ / Type of published data</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存</button>
+            <button class="xml-download c-button">XMLを保存 / Save XML file.</button>
           </div>
-          <p>ここには公開データのタイプを記入します。例えば、通常の数値データであれば、Datasetsと記入してください。</p>
+          <p>ここには公開データのタイプを記入します。例えば、通常の数値データであれば、Datasetと記入してください。 / Please provide the information on a type of published data. Please fill out "Dataset" if the published data are numerical, for example.</p>
           <div class="resource-type">
             <div class="item-body" style="display: none;">
               <label>
-                *公開データセットの名前<br>(例：磁場3成分の場合：Three-dimensional (H, D, and Z components) geomagnetic field data)
+                *公開データセットの名前 / Name of published dataset<br>(ex. Three-dimensional (H, D, and Z components) geomagnetic field data)
                 <input class="resource_type">
               </label>
               <br>
               <label>
-                *公開データのタイプ<br>(例：Datasets)
+                *公開データのタイプ / Type of published data<br>(ex. Dataset, Audiovisual, Image, Model, Event, PhysicalObject, Text, Software, Other)
                 <input class="type">
               </label>
               <br>
@@ -635,113 +635,113 @@
       <!-- size-list 複数のサイズを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>データのサイズ/Size of Data</h4>
+          <h4>データのサイズ</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML file</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データ容量(xx[MB]）、ページ数(xx[pages])をいれてください。/ Data Volume (xx[MB]), numbe of pages (xx[pages])</p>
+          <p>データ容量(xx[MB]）、ページ数(xx[pages])をいれてください。</p>
           <div class="size-list">
             <div class="item-body" style="display: none;">
               <label>
-                サイズ/Size
+                サイズ
                 <input class="size">
               </label>
               <br>
               <br>
-              <button class="remove c-button">サイズを削除/Delete Size</button>
+              <button class="remove c-button">サイズを削除</button>
             </div>
           </div>
-          <button class="size-list-form-append c-button">サイズを追加/Add Size</button>
+          <button class="size-list-form-append c-button">サイズを追加</button>
         </div>
       </div>
 
       <!-- rights-list 複数の権利情報を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データ利用規約やRules of the Roadなど/ Data policy or Rules of the Road</h4>
+          <h4>* データ利用規約やRules of the Roadなど</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データ利用規約やRules of the Roadなどを記載いただくか、もしくはそれらへのリンクアドレスをお願いします/ Please mention the data policy/Rules of the road or URI</p>
+          <p>データ利用規約やRules of the Roadなどを記載いただくか、もしくはそれらへのリンクアドレスをお願いします</p>
           <div class="rights-list">
             <div class="item-body" style="display: none;">
               <label>
-                ライセンス情報 (CC BYなど）/ License Information (ex: CCBY)
+                ライセンス情報 (CC BYなど）
                 <input class="rights">
               </label>
               <br>
               <label>
-                データ利用規約やRules of the RoadのURI / URI for data policy or Rules of the Road
+                データ利用規約やRules of the RoadのURI
                 <input class="uri">
               </label>
               <br>
               <br>
-              <button class="remove c-button">データ利用規約を削除 / Delete data policy</button>
+              <button class="remove c-button">データ利用規約を削除</button>
             </div>
           </div>
-          <button class="rights-list-form-append c-button">データ利用規約を追加 / Add data policy</button>
+          <button class="rights-list-form-append c-button">データ利用規約を追加</button>
         </div>
       </div>
 
       <!-- description-list 複数の追加情報を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>*データに関する説明事項 / Explanation on the data</h4>
+          <h4>*データに関する説明事項</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存 / Save in XML file</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>追加事項があれば、テキスト形式で記載をお願いします / Further informartion can be described here.</p>
+          <p>追加事項があれば、テキスト形式で記載をお願いします</p>
           <div class="description-list">
             <div class="item-body" style="display: none;">
               <label>
-                追加情報(内容記述) / Additional Information
+                追加情報(内容記述)
                 <textarea class="description" rows="5" cols="40"></textarea>
               </label>
               <br>
               <label>
-                追加(内容記述)情報タイプ（Abstract と書いてください）/ Type of information (Default: Abstract)
+                追加(内容記述)情報タイプ（Abstract と書いてください）
                 <input class="type">
               </label>
               <br>
               <label>
-                内容記述情報の記述言語 /Language (Default: English)
+                内容記述情報の記述言語
                 <select class="lang">
                   <option value="">なし</option>
                 </select>
               </label>
               <br>
               <br>
-              <button class="remove c-button">内容記述情報を削除 / Delete Explanation </button>
+              <button class="remove c-button">内容記述情報を削除</button>
             </div>
           </div>
-          <button class="description-list-form-append c-button">内容記述情報を追加 / Add Explanation</button>
+          <button class="description-list-form-append c-button">内容記述情報を追加</button>
         </div>
       </div>
 
       <!-- signature シグネチャ -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>シグネチャ（不要）/ Signature (N/A) </h4>
+          <h4>シグネチャ（不要）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存 / Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データを保証する機関や、組織、個人の情報をいれてください / Information on insitute, organization and individaul person information</p>
+          <p>データを保証する機関や、組織、個人の情報をいれてください</p>
           <div class="signature">
             <div class="item-body" style="display: none;">
               <label>
-                シグネチャ / Signature
+                シグネチャ
                 <input class="signature">
               </label>
               <br>
@@ -753,103 +753,103 @@
       <!-- geolocation-list 複数の位置情報を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>位置情報/Information about location</h4>
+          <h4>位置情報</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>地上観測の場合観測点座標などをいれてください。以下の"一点"、"範囲"もしくはフリーテキストに入力してください。/ Please input geographical location (lat, long) in the following about "a point", "area", or "free-text"</p>
+          <p>地上観測の場合観測点座標などをいれてください。以下の"一点"、"範囲"もしくはフリーテキストに入力してください。</p>
           <div class="geolocation-list">
             <div class="item-body" style="display: none;">
               <label>
-                空間の一点を記入する。例（31.233 ‐67.302（緯度 経度。スペース区切り）、緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表します。緯度の範囲は-90から90で正の値は北部を表します。/ Please input geographical location (lat, long) as a point (lat, long with space-separated fromat)
+                空間の一点を記入する。例（31.233 ‐67.302（緯度 経度。スペース区切り）、緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表します。緯度の範囲は-90から90で正の値は北部を表します。
                 <input class="geolocation_point">
               </label>
               <br>
               <label>
-                ボックス状の空間範囲を記入する。41.090 ‐71.032 42.893 ‐68.211（南西側の緯度 経度 北東側の緯度 経度。スペース区切り）緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表す。緯度の範囲は-90から90で正の値は北部を表す。/ Please input geographical location (lat, long) as an area (lat, long with space-separated fromat).
+                ボックス状の空間範囲を記入する。41.090 ‐71.032 42.893 ‐68.211（南西側の緯度 経度 北東側の緯度 経度。スペース区切り）緯度は北緯+/南緯-、経度は東経+/西経-。経度の範囲は-180から180で正の値は東部を表す。緯度の範囲は-90から90で正の値は北部を表す。
                 <input class="geolocation_box">
               </label>
               <br>
               <label>
-                位置情報(フリーテキスト：地理上の地点の名称を記入してください）。/ Please input the location information in the free text.
+                位置情報(フリーテキスト：地理上の地点の名称を記入してください）。
                 <input class="geolocation_place">
               </label>
               <br>
               <br>
-              <button class="remove c-button">位置情報を削除/Delete position information</button>
+              <button class="remove c-button">位置情報を削除</button>
             </div>
           </div>
-          <button class="geolocation-list-form-append c-button">位置情報を追加/Add position information</button>
+          <button class="geolocation-list-form-append c-button">位置情報を追加</button>
         </div>
       </div>
 
       <!-- fund-list 複数の助成機関を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>助成機関(任意）/ Funding agency (option)</h4>
+          <h4>助成機関(任意）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存 / Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>JSPSなどの助成機関名称をいれてください / pleaes input the funding agency name (ex, JSPS)</p>
+          <p>JSPSなどをいれてください</p>
           <div class="fund-list">
             <div class="item-body" style="display: none;">
               <label>
-                助成機関名称 / Name of funding agency
+                助成機関名称
                 <input class="funder_name">
               </label>
               <br>
               <label>
-                助成機関名の記述言語 / Language (Default: English)
+                助成機関名の記述言語
                 <select class="lang">
                   <option value="">なし</option>
                 </select>
               </label>
               <br>
               <label>
-                助成機関ID：The Crossref Funder Registryよりfunder IDを取得した場合に"FundRef”を指定する。GRID = Global Research Identifier Database、ISNI = International Standard Name Identifier、ROR = Research Organization Registry、NID = NISTEP大学・公的機関名辞書の機関ID（任意)/ID for funding agency (option)
+                助成機関ID：The Crossref Funder Registryよりfunder IDを取得した場合に"FundRef”を指定する。GRID = Global Research Identifier Database、ISNI = International Standard Name Identifier、ROR = Research Organization Registry、NID = NISTEP大学・公的機関名辞書の機関ID（任意)
                 <input class="funder_identifier">
               </label>
               <br>
               <label>
-                助成機関IDタイプ / Type of the funding agency
+                助成機関IDタイプ
                 <input class="type">
               </label>
               <br>
 
               <label>
-                助成番号(グラント番号)、ファンド番号 / Award Number
+                助成番号(グラント番号)、ファンド番号
                 <input class="award_number">
               </label>
               <br>
               <br>
-              <button class="remove c-button">助成機関を削除/Delete the funding agency</button>
+              <button class="remove c-button">助成機関を削除</button>
             </div>
           </div>
-          <button class="fund-list-form-append c-button">助成機関を追加/Add the funding agency</button>
+          <button class="fund-list-form-append c-button">助成機関を追加</button>
         </div>
       </div>
 
       <!-- multiple-resolution-priority マルチプル優先度 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>マルチプル優先度(不要）/ Multiple Priority (NA)</h4>
+          <h4>マルチプル優先度(不要）</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>登録するコンテンツのマルチプルレゾリューションを許可する場合に、1～999（1が最優先）の数値を指定してください/Please specify 1-999 (1 is the firsr priority) if you use the multiple resolution (N/A)</p>
+          <p>登録するコンテンツのマルチプルレゾリューションを許可する場合に、1～999（1が最優先）の数値を指定してください</p>
           <div class="multiple-resolution-priority">
             <div class="item-body" style="display: none;">
               <label>
-                マルチプル優先度/Multiple resolution priority (N/A)
+                マルチプル優先度
                 <input class="multiple_resolution_priority">
               </label>
               <br>
@@ -861,14 +861,14 @@
       <!-- isas-data-list 複数のisas_dataを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データリポジトリ情報 / Information on the data repositry</h4>
+          <h4>* データリポジトリ情報</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存 / Save in XEML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データを公開しているURL等の記載をお願いします（例：https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/) / Information about URI for the data repository</p>
+          <p>データを公開しているURL等の記載をお願いします（例：https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/ground/geomag/isee/induction/zgn/</p>
           <div class="isas-data-list">
             <div class="item-body" style="display: none;">
               <label>
@@ -877,29 +877,29 @@
               </label>
               <br>
               <label>
-                例：Directory of the dataset (all versions, ERG Science Center)/ex: Directory of data set (all version, ERG Science Center)
+                例：Directory of the dataset (all versions, ERG Science Center)
                 <input class="text">
               </label>
               <br>
               <br>
-              <button class="remove c-button">データリポジトリ情報を削除/Delete information on the data repository</button>
+              <button class="remove c-button">isas_dataを削除</button>
             </div>
           </div>
-          <button class="isas-data-list-form-append c-button">データリポジトリ情報を追加/Add information on the data repositry</button>
+          <button class="isas-data-list-form-append c-button">isas_dataを追加</button>
         </div>
       </div>
 
       <!-- isas_citation isas_citation -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>* データを引用する際の情報/Information about the data citation</h4>
+          <h4>* データを引用する際の情報</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML file</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>データ引用情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）/ Please mention the data citation information</p>
+          <p>データ引用情報を記載してください（例：Shiokawa, K., D. G. Baishev, and Y. Otsuka,Geomagnetic field variation data measured by a ground induction magnetometer at Zhigansk, Russia, archived in Common Data Format,DOI:10.34515/DATA.GND-0061-0002-0101_v01, 2021）</p>
           <div class="isas_citation">
             <div class="item-body" style="display: none;">
               <label>
@@ -915,46 +915,46 @@
       <!-- isas-metadata-date-list 複数のisas_metadata_dateを表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
-          <h4>*変更履歴/update history</h4>
+          <h4>*変更履歴</h4>
         </div>
         <div class="accordion__content">
           <div class="title block">
             <div></div>
-            <button class="xml-download c-button">XMLを保存/Save in XML</button>
+            <button class="xml-download c-button">XMLを保存</button>
           </div>
-          <p>変更履歴を記載します/update history</p>
+          <p>変更履歴を記載します</p>
           <div class="isas-metadata-date-list">
             <div class="item-body" style="display: none;">
               <label>
-                type(公開済みの場合"Issued"、アップデートの場合 "Updated"と記載ください)/ type : "Issued" (the data files have been opened), "Updated" (upated)
+                type(公開済みの場合"Issued"、アップデートの場合 "Updatedd"と記載ください)
                 <input class="type">
               </label>
               <br>
               <label>
-                date(変更履歴の日付をいれてください）/ data on the data updated
+                date(変更履歴の日付をいれてください）
                 <input class="date">
               </label>
               <br>
               <br>
-              <button class="remove c-button">変更履歴を削除/Delete update history</button>
+              <button class="remove c-button">isas_metadata_dateを削除</button>
             </div>
           </div>
-          <button class="isas-metadata-date-list-form-append c-button">変更履歴を追加/Add update history</button>
+          <button class="isas-metadata-date-list-form-append c-button">isas_metadata_dateを追加</button>
         </div>
       </div>
 
       <br>
       <br>
-      <button class="remove_content c-button">メタデータを削除/Delete metadata</button>
+      <button class="remove_content c-button">メタデータを削除</button>
     </div>
   </div>
-  <button class="content-form-append c-button">メタデータを追加/Add metadata</button>
+  <button class="content-form-append c-button">メタデータを追加</button>
   <br>
   <br>
   <hr>
   <br>
   <input type="hidden" id="xml-filename" value="JaLC_research_data.xml">
-  <button id="xml-download" class="c-button">XMLを保存/Save in XML</button>
+  <button id="xml-download" class="c-button">XMLを保存</button>
 
   <script src="iso_code.js"></script>
   <script src="jalc_xml.js"></script>
