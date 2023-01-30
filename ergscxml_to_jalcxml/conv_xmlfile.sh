@@ -1,4 +1,5 @@
-#!/bin/bash
+##!/bin/bash
+#!/bin/sh
 #
 # Usage:
 #    conv_xmlfile.sh ../hep/erg_hep_l2_3dflux_ergsc.xml

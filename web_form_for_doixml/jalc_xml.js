@@ -2,7 +2,8 @@
 const parser = new DOMParser();
 let xml = parser.parseFromString(`<root>
     <head>
-        <error_process>0</error_process>
+        <!--error_processの値を0から１に変更 by A. Shinbori-->
+        <error_process>1</error_process>
         <!-- 継続 -->
         <result_method>0</result_method>
         <!-- オンライン -->
@@ -12,7 +13,8 @@ let xml = parser.parseFromString(`<root>
         <!-- 登録・更新 -->
     </head>
     <body>
-        <site_id>SI/JST.JaLC</site_id>
+　　　　　<!--site_idの中身をSI/JST.JaLCからSI/THERS.ISEEに変更 by A. Shinbori-->
+        <site_id>SI/THERS.ISEE</site_id>
     </body>
 </root>
 `, "application/xml");
