@@ -150,6 +150,8 @@ function appendCreatorListNamesBody( content_index, creator_index) {
     const x_suffix = xml.createElement('suffix');
     xml_body.getElementsByTagName('creator')[creator_index].appendChild(x_names);
 
+    x_names.setAttribute('lang', 'en');
+
     x_names.appendChild(x_lastname);
     x_names.appendChild(x_firstname);
     x_names.appendChild(x_prefix);
@@ -278,6 +280,19 @@ function appendCreatorListAffiliationBody( content_index, creator_index) {
     // 対応するXMLデータがない時はXMLに項目追加
     const x_affiliation_name = xml.createElement('affiliation_name');
 
+    // 初期値をセット
+    let max_seq = 0;
+    const xml_affiliation_names = xml_body.getElementsByTagName('affiliation')[0].getElementsByTagName('affiliation_name');
+    for (const xml_affiliation_name of xml_affiliation_names) {
+      if( Number(max_seq) < (isNaN(xml_affiliation_name.getAttribute('sequence'))?0:Number(xml_affiliation_name.getAttribute('sequence'))) ){
+        max_seq = Number(xml_affiliation_name.getAttribute('sequence'));
+      }
+    }
+
+    html_affiliation_sequence.value = max_seq + 1;
+    x_affiliation_name.setAttribute('sequence', max_seq + 1);
+
+    x_affiliation_name.setAttribute('lang', 'en');
     x_affiliation.appendChild(x_affiliation_name);
 
     html_affiliation_name_lang.addEventListener('change', (e) => {

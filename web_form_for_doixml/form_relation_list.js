@@ -29,6 +29,7 @@ function appendRelationListBody(content_index) {
   // 入力項目のHTML参照を取得
   const html_related_content = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('related_content')[0];
   const html_type = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('type')[0];
+  const html_title = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('title')[0];
   const html_scheme = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('scheme')[0];
   const html_scheme_uri = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('scheme_uri')[0];
   const html_scheme_type = html_relation_list_body.getElementsByClassName('item-body')[index+1].getElementsByClassName('scheme_type')[0];
@@ -55,6 +56,9 @@ function appendRelationListBody(content_index) {
     html_type.addEventListener('change', (e) => {
       x_related_content.setAttribute('type', e.target.value);
     });
+    html_title.addEventListener('change', (e) => {
+      x_related_content.setAttribute('title', e.target.value);
+    });
     html_scheme.addEventListener('change', (e) => {
       x_related_content.setAttribute('scheme', e.target.value);
     });
@@ -76,6 +80,7 @@ function appendRelationListBody(content_index) {
     // XMLの値を入力欄にセット
     html_related_content.value = x_related_content?.textContent;
     html_type.value = x_related_content?.getAttribute('type');
+    html_title.value = x_related_content?.getAttribute('title');
     html_scheme.value = x_related_content?.getAttribute('scheme');
     html_scheme_uri.value = x_related_content?.getAttribute('scheme_uri');
     html_scheme_type.value = x_related_content?.getAttribute('scheme_type');
@@ -86,6 +91,9 @@ function appendRelationListBody(content_index) {
     });
     html_type.addEventListener('change', (e) => {
       x_related_content.setAttribute('type', e.target.value);
+    });
+    html_title.addEventListener('change', (e) => {
+      x_related_content.setAttribute('title', e.target.value);
     });
     html_scheme.addEventListener('change', (e) => {
       x_related_content.setAttribute('scheme', e.target.value);

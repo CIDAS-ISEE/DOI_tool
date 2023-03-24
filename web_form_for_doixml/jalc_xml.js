@@ -12,8 +12,8 @@ let xml = parser.parseFromString(`<root>
         <request_kind>01</request_kind>
         <!-- 登録・更新 -->
     </head>
+    <!--site_idの中身をSI/JST.JaLCからSI/THERS.ISEEに変更 by A. Shinbori-->
     <body>
-　　　　　<!--site_idの中身をSI/JST.JaLCからSI/THERS.ISEEに変更 by A. Shinbori-->
         <site_id>SI/THERS.ISEE</site_id>
     </body>
 </root>
@@ -84,7 +84,7 @@ function download(blob, filename) {
 function xmlToBlob(xml) {
   const serializer = new XMLSerializer();
   const string = prettifyXml(serializer.serializeToString(xml));
-  return new Blob([string], { type: "application/xml" });
+  return new Blob([string.replace(/<(.*)\/>/g, '<$1></$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*) (.*)>/g, '</$1>').replace(/<\/(.*) (.*)>/g, '</$1>')], { type: "application/xml" });
 }
 
 function downloadXML(xml, filename) {

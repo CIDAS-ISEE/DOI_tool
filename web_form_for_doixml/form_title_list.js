@@ -57,6 +57,7 @@ function appendTitleListBody(content_index) {
     const x_subtitle = xml.createElement('subtitle');
     xml_body.getElementsByTagName('title_list')[0].appendChild(x_titles);
 
+    x_titles.setAttribute('lang', 'en');
     x_titles.appendChild(x_title);
     x_titles.appendChild(x_subtitle);
 

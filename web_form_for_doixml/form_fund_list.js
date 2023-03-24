@@ -65,6 +65,8 @@ function appendFundListBody(content_index) {
     x_fund.appendChild(x_funder_identifier);
     x_fund.appendChild(x_award_number);
 
+    x_funder_name.setAttribute('lang', 'en');
+
     html_funder_name.addEventListener('change', (e) => {
       x_funder_name.textContent = e.target.value;
     });

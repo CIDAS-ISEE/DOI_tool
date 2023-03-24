@@ -63,6 +63,8 @@ function appendPublisherBody(content_index) {
     xml_body.getElementsByTagName('publisher')[0].appendChild(x_publisher_name);
     xml_body.getElementsByTagName('publisher')[0].appendChild(x_location);
 
+    x_publisher_name.setAttribute('lang', 'en');
+
     html_publisher_name.addEventListener('change', (e) => {
       x_publisher_name.textContent = e.target.value;
     });

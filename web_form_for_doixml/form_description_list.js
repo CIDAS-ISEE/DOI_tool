@@ -55,6 +55,8 @@ function appendDescriptionListBody(content_index) {
     const x_description = xml.createElement('description');
     xml_body.getElementsByTagName('description_list')[0].appendChild(x_description);
 
+    x_description.setAttribute('lang', 'en');
+
     html_description.addEventListener('change', (e) => {
       x_description.textContent = e.target.value;
     });

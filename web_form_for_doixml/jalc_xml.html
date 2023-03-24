@@ -480,35 +480,39 @@
           <div class="relation-list">
             <div class="item-body" style="display: none;">
               <label>
-                *関連する文献等 / References etc.<br>(ex. References)
-                <input class="related_content">
+                *関連する文献等 [relation] / References etc.<br>(ex. References)
+                <input class="relation">
               </label>
               <br>
               <label>
-                *関連する文献等の識別子 / Identifier of related references etc.<br>(ex. DOI)
+                *関連する文献等の識別子 [type] / Identifier of related references etc.<br>(ex. DOI)
                 <input class="type">
               </label>
               <br>
               <label>
-                *関連する文献等の情報 / Information on related references<br>(ex. Shiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
+                *関連する文献等の情報 [title] / Information on related references<br>(ex. Shiokawa, K., R. Nomura, K. Sakaguchi, Y. Otsuka, Y. Hamaguchi, M. Satoh, Y. Katoh, Y. Yamamoto, B. M. Shevtsov, S. Smirnov, I. Poddelsky, and M. Connors (2010), The STEL induction magnetometer network for observation of high-frequency geomagnetic pulsations, Earth Planets Space, 62(6), 517-524.)
+                <input class="title">
+              </label>
+              <br>
+              <label>
+                *関連する文献等のDOI [related_content] / DOI of related references<br>(ex. 10.5047/eps.2010.05.003)
+                <input class="related_content">
+              </label>
+              <br>
+              <label>
+                関連するコンテンツのスキーム [scheme] /
                 <input class="scheme">
               </label>
               <br>
               <label>
-                *関連する文献等のDOI / DOI of related references<br>(ex. 10.5047/eps.2010.05.003)
-                <input class="scheme_uri">
-              </label>
-              <br>
-              <label> 
-                関連する計画案 / Related Scheme   
+                関連する計画案 [scheme_type] / Related Scheme
                 <input class="scheme_type"> 
               </label>
               <br>
               <label>
-                その他の関連事項 / Others 
-                <input class="relation">
-              </label> 
-              <br> 
+                その他の関連事項 [scheme_uri] / Others
+                <input class="scheme_uri">
+              </label>
               <br>
               <button class="remove c-button">関連するコンテンツを削除 / Remove related contents.</button>
             </div>

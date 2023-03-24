@@ -56,6 +56,8 @@ function appendSubjectListBody(content_index) {
     const x_subject = xml.createElement('subject');
     xml_body.getElementsByTagName('subject_list')[0].appendChild(x_subject);
 
+    x_subject.setAttribute('lang', 'en');
+
     html_subject.addEventListener('change', (e) => {
       x_subject.textContent = e.target.value;
     });

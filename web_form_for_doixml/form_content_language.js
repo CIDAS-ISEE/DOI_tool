@@ -44,6 +44,8 @@ function appendContentLanguageBody(content_index) {
 
     xml_body.appendChild(x_content_language);
 
+    x_content_language.textContent = 'en';
+
     html_content_language.addEventListener('change', (e) => {
       x_content_language.textContent = e.target.value;
     });
