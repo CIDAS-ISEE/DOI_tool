@@ -66,24 +66,13 @@
             <ul>
               <xsl:apply-templates select="title_list"/>
               <li><xsl:text>DOI: </xsl:text><xsl:value-of select="doi"/></li>
-
-<!--Modified by A. Shinbori (2023-04-29)-->
-<!--Add a function to judge whether the contents (alternate_identifier_list/alternate_identifier) are included in each element or not-->
-<!--If they are null, the description is represented as "None.".-->
               <li><xsl:text>Alternate identifier(s): </xsl:text>
               <xsl:choose>
-                <xsl:when test="alternate_identifier_list/alternate_identifier">
-                  <xsl:if test="alternate_identifier_list/alternate_identifier=''">
-                    <xsl:text>None.</xsl:text>
-                  </xsl:if>
-                  <xsl:if test="alternate_identifier_list/alternate_identifier[*|text()]">
+                <xsl:when test="alternate_identifier_list">
                     <ul>
                       <xsl:apply-templates select="alternate_identifier_list/alternate_identifier"/>
                     </ul>
-                  </xsl:if>
                 </xsl:when>
-<!--Modified by A. Shinbori (2023-04-29)-->
-
                 <xsl:otherwise>
                   <xsl:text>None.</xsl:text>
                 </xsl:otherwise>
