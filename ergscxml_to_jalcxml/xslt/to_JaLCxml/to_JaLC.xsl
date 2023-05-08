@@ -15,7 +15,7 @@
 
 <!--Add a function to judge whether the contents are included in each element or not-->
 <!--If the contents are null, the null comment is inserted.-->
-  <xsl:template match="node()">
+  <xsl:template match="/|node()|@*">
     <xsl:copy>
       <xsl:choose>
         <xsl:when test="0!=count(node())">
