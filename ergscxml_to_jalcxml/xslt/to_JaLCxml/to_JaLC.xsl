@@ -15,6 +15,7 @@
 
 <!--Add a function to judge whether the contents are included in each element or not-->
 <!--If the contents are null, the null comment is inserted.-->
+<!--
   <xsl:template match="/|node()|@*">
     <xsl:copy>
       <xsl:choose>
@@ -24,6 +25,15 @@
         <xsl:otherwise><xsl:comment></xsl:comment></xsl:otherwise>
       </xsl:choose>
     </xsl:copy>
+  </xsl:template>
+-->
+<!--Remove the empty tags.-->
+  <xsl:template match="@*|node()">
+    <xsl:if test=".!=''">
+      <xsl:copy>
+	<xsl:apply-templates select="@*|node()"/>
+      </xsl:copy>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="/root/body/content/relation_list/related_content/@title"/>
