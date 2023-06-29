@@ -12,22 +12,22 @@
     </xsl:copy>
   </xsl:template>
 -->
-
-<!--Add a function to judge whether the contents are included in each element or not-->
-<!--If the contents are null, the null comment is inserted.-->
-<!--
+ <!--
   <xsl:template match="/|node()|@*">
     <xsl:copy>
       <xsl:choose>
         <xsl:when test="0!=count(node())">
           <xsl:apply-templates select="@*|node()"/>
         </xsl:when>
-        <xsl:otherwise><xsl:comment></xsl:comment></xsl:otherwise>
+       <xsl:otherwise><xsl:comment></xsl:comment></xsl:otherwise>  
+        <xsl:otherwise>N/A</xsl:otherwise>   
       </xsl:choose>
     </xsl:copy>
   </xsl:template>
 -->
+<!--Add a function to judge whether the contents are included in each element or not-->
 <!--Remove the empty tags.-->
+
   <xsl:template match="@*|node()">
     <xsl:if test=".!=''">
       <xsl:copy>
@@ -35,6 +35,13 @@
       </xsl:copy>
     </xsl:if>
   </xsl:template>
+
+  <xsl:template match="/root/body/content/contributor_list/contributor/researcher_id"/>
+
+  <xsl:template match="/root/body/content/alternate_identifier_list"/>
+
+  <xsl:template match="/root/body/content/size_list"/>
+
 
   <xsl:template match="/root/body/content/relation_list/related_content/@title"/>
   
