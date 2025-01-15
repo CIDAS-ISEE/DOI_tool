@@ -693,6 +693,35 @@
         </div>
       </div>
 
+      <!-- access_rights アクセス権 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>アクセス権/access rights</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p></p>
+          <div class="access_rights">
+            <div class="item-body" style="display: none;">
+              <label>
+                アクセス権
+　		公開(open access)/限定公開(restricted access)/公開猶予(embargoed access)/非公開(metadata only access)のどれかを記入する
+                <input class="access_rights">
+              </label>
+              <br>
+              <label>
+                公開予定日または公開日
+                <input class="date">
+              </label>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- description-list 複数の追加情報を表す要素 -->
       <div class="accordion__item">
         <div class="accordion__title js-accordion-trigger">
@@ -826,10 +855,45 @@
               </label>
               <br>
 
-              <label>
-                助成番号(グラント番号)、ファンド番号
-                <input class="award_number">
-              </label>
+              <div class="fund-list-award-number-group">
+                <div class="item-award-number-group-body" style="display: none;">
+                  Number of the award<br>
+                  <label>
+                    プログラムID program id
+		　　(公募型の研究資金の場合は、体系的番号のうち、「機関コード」および「施策・事業の特定コード」を表すコードを入れる。それ以外の研究資金の場合は不要)
+                    <input class="program_id">
+                  </label>
+                  <br>
+                  <label>
+                    プログラム名 program name
+		    (競争的研究費精度の名称)
+                    <input class="program_name">
+                  </label>
+                  <br>
+                  <label>
+                    プロジェクト名 project name
+　　　　　　　　　　(プロジェクトの研究代表者が統括する研究課題名)
+                    <input class="project_name">
+                  </label>
+                  <br><br>
+                  <div class="fund-list-award-number-group-award-number">
+                    <div class="item-award-number-group-award-number-body" style="display: none;">
+                      <label>
+                        助成番号(グラント番号）、ファンド番号 award number
+                        <input class="award_number">
+                      </label>
+                      <br>
+                      <br>
+                      <button class="remove_award_number_group-award-number c-button">助成番号を削除 / Delete the award number</button>
+                    </div>
+                  </div>
+                  <button class="fund-list-award-number-group-award-number-form-append c-button">助成番号を追加 / Add a new award number</button>
+                  <br>
+                  <br>
+                  <button class="remove_award_number_group c-button">助成番号グループを削除 / Delete the award number</button>
+                </div>
+              </div>
+              <button class="fund-list-award-number-group-form-append c-button">助成番号グループを追加 / Add a new award number</button>
               <br>
               <br>
               <button class="remove c-button">助成機関を削除</button>
@@ -859,6 +923,39 @@
               <br>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- repository 複数のリポジトリ情報を表す要素 -->
+      <div class="accordion__item">
+        <div class="accordion__title js-accordion-trigger">
+          <h4>リポジトリ情報</h4>
+        </div>
+        <div class="accordion__content">
+          <div class="title block">
+            <div></div>
+            <button class="xml-download c-button">XMLを保存</button>
+          </div>
+          <p></p>
+          <div class="repository">
+            <div class="item-body" style="display: none;">
+              <label>
+                リポジトリ名
+                <input class="repository_name">
+              </label>
+              <br>
+              <label>
+                リポジトリ名の記述言語
+                <select class="lang">
+                  <option value="">なし</option>
+                </select>
+              </label>
+              <br>
+              <br>
+              <button class="remove c-button">リポジトリ情報を削除</button>
+            </div>
+          </div>
+          <button class="repository-form-append c-button">リポジトリ情報を追加</button>
         </div>
       </div>
 
@@ -977,11 +1074,13 @@
   <script src="form_resource_type.js"></script>
   <script src="form_size_list.js"></script>
   <script src="form_rights_list.js"></script>
+  <script src="form_access_rights.js"></script>
   <script src="form_description_list.js"></script>
   <script src="form_signature.js"></script>
   <script src="form_geolocation_list.js"></script>
   <script src="form_fund_list.js"></script>
   <script src="form_multiple_resolution_priority.js"></script>
+  <script src="form_repository.js"></script>
   <script src="form_isas_data_list.js"></script>
   <script src="form_isas_citation.js"></script>
   <script src="form_isas_metadata_date_list.js"></script>

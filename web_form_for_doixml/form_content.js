@@ -155,6 +155,9 @@ function appendContentBody() {
   // 権利情報
   initRightsListBody(index);
 
+  // 権利情報
+  initAccessRightsBody(index);
+
   // 追加情報(内容記述)
   initDescriptionListBody(index);
 
@@ -166,6 +169,9 @@ function appendContentBody() {
 
   // 助成機関
   initFundListBody(index);
+
+  // リポジトリ情報を表す要素
+  initRepositoryBody(index);
 
   // マルチプル優先度
   initMultipleResolutionPriorityBody(index);
@@ -229,11 +235,13 @@ function xml_to_content(xml) {
     xml_to_resource_type(xml, index);          // リソース種別
     xml_to_size_list(xml, index);          // サイズ
     xml_to_rights_list(xml, index);          // 権利情報
+    xml_to_access_rights(xml, index);          // アクセス権
     xml_to_description_list(xml, index);          // 追加情報
     xml_to_signature(xml, index);          // シグネチャ
     xml_to_geolocation_list(xml, index);          // 位置情報
     xml_to_fund_list(xml, index);          // 助成機関
-    xml_to_multiple_resolution_priority(xml, index);          // マルチプル優先度
+    xml_to_fund_list(xml, index);          // 助成機関
+    xml_to_repository(xml, index);          // リポジトリ情報を表す要素
     xml_to_isas_data_list(xml, index);          // isas_data_list
     xml_to_isas_citation(xml, index);          // isas_citation
     xml_to_isas_metadata_date_list(xml, index);          // isas_metadata_date_list
