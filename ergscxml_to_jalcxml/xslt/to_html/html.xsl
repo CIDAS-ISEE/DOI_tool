@@ -106,6 +106,9 @@
             <xsl:apply-templates select="relation_list"/>
             <xsl:apply-templates select="contributor_list"/>
             <xsl:apply-templates select="content_language"/>
+            <xsl:apply-templates select="geolocation_list"/>
+            <xsl:apply-templates select="access_rights"/>
+            <xsl:apply-templates select="repository"/>
             
             <h2>DATES OF DATASET</h2>
             <xsl:apply-templates select="date_list"/>
@@ -269,17 +272,15 @@
   <xsl:template match="geolocation_list">
     <!-- If not empty -->
     <h3><xsl:text>Geolocation(s)</xsl:text></h3>
-    <ul>
+     <ul>
       <xsl:for-each select="geolocation">
-        <li>
-          <ul class="geolocation">
-            <xsl:choose>
-              <xsl:when test="geolocation_point">
-                <li><xsl:text>Point in Latitude and Latitude: </xsl:text><xsl:value-of select="geolocation_point"/></li>
-              </xsl:when>
-              <xsl:otherwise></xsl:otherwise>
-            </xsl:choose>
-            <xsl:choose>
+      	<xsl:choose>
+           <xsl:when test="geolocation_point">
+            <li><xsl:text>Point in Latitude and Latitude: </xsl:text><xsl:value-of select="geolocation_point"/></li>
+         </xsl:when>
+         <xsl:otherwise></xsl:otherwise>
+        </xsl:choose>
+        <xsl:choose>
               <xsl:when test="geolocation_box">
                 <li><xsl:text>Rectangular region of South-West corner and North-East corner in Latitude and Longitude: </xsl:text><xsl:value-of select="geolocation_box"/></li>
               </xsl:when>
@@ -289,14 +290,26 @@
               <xsl:when test="geolocation_place">
                 <li><xsl:text>Description of geographic location: </xsl:text><xsl:value-of select="geolocation_place"/></li>
               </xsl:when>
-              <xsl:otherwise></xsl:otherwise>
-            </xsl:choose>
-          </ul>
-        </li>
+            <xsl:otherwise></xsl:otherwise>
+         </xsl:choose>
       </xsl:for-each>
     </ul>
   </xsl:template>
 
+  <xsl:template match="repository">
+    <!-- If not empty -->
+    <h3><xsl:text>Repository</xsl:text></h3>
+     <ul>
+      <xsl:for-each select="repository_name_list">
+      	<xsl:choose>
+           <xsl:when test="repository_name">
+            <xsl:apply-templates select="repository_name"/>
+         </xsl:when>
+         <xsl:otherwise></xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
   
   <xsl:template match="edition">
     <!-- If not empty -->
@@ -344,8 +357,31 @@
   </xsl:template>
 
   <xsl:template match="rights">
+    <!-- If not empty -->
     <xsl:variable name="uritext" select="@uri"/>
     <li><a href="{$uritext}"><xsl:value-of select="."/></a></li>
+  </xsl:template>
+
+  <xsl:template match="access_rights">
+    <!-- If not empty -->
+    <h3><xsl:text>Access rights</xsl:text></h3>
+     <ul>
+           <xsl:variable name="access_rights" select="@date"/>
+        <li><xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="@date"/><xsl:text>)</xsl:text></li>
+     </ul>
+  </xsl:template>
+
+<!--
+  <xsl:template match="repository_name">
+    <xsl:variable name="uritext" select="@uri"/>
+    <li><a href="{$uritext}"><xsl:value-of select="."/></a></li>
+  </xsl:template>
+-->
+
+  <xsl:template match="repository_name">
+    <xsl:if test="@lang='en'">
+        <li><xsl:value-of select="."/></li>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="description_list">
